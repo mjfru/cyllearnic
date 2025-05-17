@@ -1,11 +1,12 @@
-import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
 		<>
-			<h1>Welcome to Cyllearnic</h1>
-      <Main />
+			<Header />
+			<Main />
 			<Footer />
 		</>
 	);
