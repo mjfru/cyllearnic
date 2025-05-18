@@ -11,6 +11,7 @@ const Header = () => {
 				<ul>
 					<li>Home</li>
 					<li>About</li>
+					<li>Select Language</li>
 				</ul>
 			</nav>
 		</div>
