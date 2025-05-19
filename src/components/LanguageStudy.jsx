@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
+import LetterCard from "./LetterCard";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -16,8 +17,29 @@ const LanguageStudy = () => {
 	return (
 		<>
 			<h2>Language Study Page</h2>
+			{language === "russian" && <p>Russian!</p>}
+			{language === "ukrainian" && <p>Ukrainian!</p>}
 			{selectedLanguage.map((letter) => {
-				return <p>{letter.letterUpper}</p>;
+				const {
+					id,
+					letterUpper,
+					letterLower,
+					pronunciation,
+					example,
+					meaning,
+				} = letter;
+				return (
+					<div key={id}>
+						<LetterCard
+							// id={id}
+							uppercase={letterUpper}
+							lowercase={letterLower}
+							pronunciation={pronunciation}
+							example={example}
+							meaning={meaning}
+						/>
+					</div>
+				);
 			})}
 		</>
 	);
