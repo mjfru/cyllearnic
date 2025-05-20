@@ -1,7 +1,7 @@
 const LetterCard = ({
 	// id,
-	uppercase,
-	lowercase,
+	letterUpper,
+	letterLower,
 	pronunciation,
 	example,
 	meaning,
@@ -10,7 +10,7 @@ const LetterCard = ({
 		<div style={{ border: "1px solid black", width: "150px", height: "150px" }}>
 			<div>
 				<h4>
-					{uppercase} {lowercase}
+					{letterUpper} {letterLower}
 				</h4>
 				<p>English Pronunciation: {pronunciation}</p>
 				<p>Example: {example}</p>

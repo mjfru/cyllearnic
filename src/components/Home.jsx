@@ -19,10 +19,6 @@ const Main = () => {
 				<button className="lang-nav-btn">Mongolian</button>
 				<button className="lang-nav-btn">Serbo-Croatian</button> */}
 			</nav>
-			{/* {russianCyrillic.map((letter) => {
-				const { letterUpper, letterLower } = letter;
-				console.log(letterUpper, letterLower);
-			})} */}
 		</>
 	);
 };
