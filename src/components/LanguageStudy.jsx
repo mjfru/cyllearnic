@@ -20,6 +20,12 @@ const LanguageStudy = () => {
 			<h2>Language Study Page</h2>
 			{language === "russian" && <p>Russian!</p>}
 			{language === "ukrainian" && <p>Ukrainian!</p>}
+			<Link to={`/flashcards/${language}`}>
+				<button>Study Flashcards</button>
+			</Link>
+			<Link to={`/quiz/${language}`}>
+				<button>Take a Quiz</button>
+			</Link>
 
 			{selectedLanguage.map((letter) => {
 				return (
@@ -28,7 +34,6 @@ const LanguageStudy = () => {
 					</div>
 				);
 			})}
-			<Link to={`/flashcards/${language}`}><button>Study Flashcards</button></Link>
 		</>
 	);
 };
