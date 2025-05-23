@@ -1,4 +1,5 @@
 :root {
+  /* Colours */
   --background-main: #f6f6f6;
   --primary-text: #222222;
   --secondary-text: #5a6474;
@@ -6,4 +7,9 @@
   --secondary-accent: #2e3a59;
   --highlight: #d4af37;
   --border: #e3d3d3; 
+
+  /* Fonts */
+  --cyrillic-font: "Noto Sans", sans-serif;
+  --card-letter-size: 2.5rem;
+  --flashcard-letter-size: 4rem;
 }

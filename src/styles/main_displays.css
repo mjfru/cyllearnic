@@ -1,8 +1,25 @@
+h2 {
+  text-align: center;
+}
+
+.activity-nav {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+
 .main-content {
-  height: 95vh;
-  min-height: 70vh;
-  width: 90%;
-  overflow: hidden;
+  min-height: 80vh;
+  width: 90vw;
   border: 1px solid red;
 }
 
+.study-container, .flashcard-container {
+  border: 2px solid fuchsia;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}

@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import LetterCard from "./LetterCard";
@@ -17,8 +17,9 @@ const LanguageStudy = () => {
 	const selectedLanguage = datasets[language];
 
 	return (
-		<>
+		<main>
 			<h2>Language Study Page</h2>
+			{/* Placeholder examples for conditional rendering later... */}
 			{language === "russian" && <p>Russian!</p>}
 			{language === "ukrainian" && <p>Ukrainian!</p>}
 			<ActivityNav />
@@ -27,7 +28,7 @@ const LanguageStudy = () => {
 					return <LetterCard {...letter} key={letter.id} />;
 				})}
 			</div>
-		</>
+		</main>
 	);
 };
 

@@ -34,3 +34,4 @@ Stretch Goals:
   - Bonus section for obsolete / historical letters (Russian especially)
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
+  - Toggle option for text style (typed vs. a hand-written font)

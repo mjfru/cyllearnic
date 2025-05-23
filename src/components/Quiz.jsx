@@ -4,10 +4,15 @@ const Quiz = () => {
 
 
 	return (
-		<>
-			<h1>This is the future home of quizzes.</h1>
+		<main>
+			<h1 className="quiz-test">This is the future home of quizzes.</h1>
 			<ActivityNav />
-		</>
+      <div className="quiz-container">
+        <p>Quiz Placeholder</p>
+        <input type="text" />
+        <button>Submit</button>
+      </div>
+		</main>
 	);
 };
 

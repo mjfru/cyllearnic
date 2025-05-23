@@ -8,10 +8,11 @@ const LetterCard = ({
 }) => {
 	return (
 		<div className="reg-card">
-			<div>
-				<h4>
-					{letterUpper} {letterLower}
-				</h4>
+			<h4 className="c-letters">
+				{letterUpper} {letterLower}
+				<hr className="letter-line" />
+			</h4>
+			<div className="letter-details">
 				<p>English Pronunciation: {pronunciation}</p>
 				<p>Example: {example}</p>
 				<p>Meaning: {meaning}</p>

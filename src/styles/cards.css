@@ -1,7 +1,25 @@
-.reg-card {
-  border: 2px solid black;
-  height: 20vh;
-  width: 15vw;
-  text-align: center;
-  padding: 20px;
+.reg-card,
+.flash-card {
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 25vh;
+	width: 12.5vw;
+	text-align: center;
+	padding: 20px;
+}
+
+.flash-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.c-letters {
+	font-family: var(--cyrillic-font);
+	font-size: var(--card-letter-size);
+	margin-bottom: 1.5rem;
+}
+
+.flash-letters {
+	font-size: var(--flashcard-letter-size);
 }
