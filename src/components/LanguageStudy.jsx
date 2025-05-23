@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import LetterCard from "./LetterCard";
+import ActivityNav from "./ActivityNav";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -20,20 +21,12 @@ const LanguageStudy = () => {
 			<h2>Language Study Page</h2>
 			{language === "russian" && <p>Russian!</p>}
 			{language === "ukrainian" && <p>Ukrainian!</p>}
-			<Link to={`/flashcards/${language}`}>
-				<button>Study Flashcards</button>
-			</Link>
-			<Link to={`/quiz/${language}`}>
-				<button>Take a Quiz</button>
-			</Link>
-
-			{selectedLanguage.map((letter) => {
-				return (
-					<div key={letter.id}>
-						<LetterCard {...letter} />
-					</div>
-				);
-			})}
+			<ActivityNav />
+			<div className="study-container">
+				{selectedLanguage.map((letter) => {
+					return <LetterCard {...letter} key={letter.id} />;
+				})}
+			</div>
 		</>
 	);
 };

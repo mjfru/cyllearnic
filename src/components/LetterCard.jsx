@@ -7,7 +7,7 @@ const LetterCard = ({
 	meaning,
 }) => {
 	return (
-		<div style={{ border: "1px solid black", width: "150px", height: "150px" }}>
+		<div className="reg-card">
 			<div>
 				<h4>
 					{letterUpper} {letterLower}

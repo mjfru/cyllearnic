@@ -9,18 +9,20 @@ import Quiz from "./components/Quiz";
 
 function App() {
 	return (
-		<>
+		<div className="app-container">
 			<Router>
 				<Header />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/study/:language" element={<LanguageStudy />} />
-					<Route path="/flashcards/:language" element={<FlashCards />} />
-					<Route path="/quiz/:language" element={<Quiz />} />
-				</Routes>
+				<main className="main-content">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/study/:language" element={<LanguageStudy />} />
+						<Route path="/flashcards/:language" element={<FlashCards />} />
+						<Route path="/quiz/:language" element={<Quiz />} />
+					</Routes>
+				</main>
 				<Footer />
 			</Router>
-		</>
+		</div>
 	);
 }
 

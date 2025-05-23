@@ -2,7 +2,7 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer>
+		<footer className="footer-container">
 			<p>
 				This project is focused on helping users learn and appreciate the
 				diversity of Cyrillic alphabets and the cultures that use them. All

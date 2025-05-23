@@ -1,0 +1,14 @@
+.nav-header, .footer-container {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.nav-header {
+  background-color: var(--primary-accent);
+  height: 10vh;
+}
+
+.footer-container {
+  background-color: steelblue;
+  height: 10vh;
+}

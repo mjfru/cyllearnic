@@ -1,17 +1,12 @@
-import { Link, useParams } from "react-router-dom";
+import ActivityNav from "./ActivityNav";
 
 const Quiz = () => {
-	const { language } = useParams();
+
 
 	return (
 		<>
-			<p>This is the future home of quizzes.</p>
-			<Link to={`/flashcards/${language}`}>
-				<button>Practice Flashcards</button>
-			</Link>
-			<Link to={`/study/${language}`}>
-				<button>Study Page</button>
-			</Link>
+			<h1>This is the future home of quizzes.</h1>
+			<ActivityNav />
 		</>
 	);
 };
