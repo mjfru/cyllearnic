@@ -5,7 +5,6 @@ import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import ActivityNav from "./ActivityNav";
 import FlashCard from "./Flashcard";
 
-
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
@@ -22,7 +21,6 @@ const FlashCards = () => {
 			<div className="flashcard-container">
 				{selectedLanguage.map((letter) => {
           return <FlashCard {...letter} key={letter.id}/>
-					// return <p key={letter.id}>{letter.letterUpper}</p>;
 				})}
 			</div>
 		</>

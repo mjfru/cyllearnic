@@ -1,13 +1,15 @@
+.reg-card {
+	padding: 20px;
+	border: 2px solid black;
+}
+
 .reg-card,
 .flash-card {
-	border: 2px solid black;
 	border-radius: 10px;
 	height: 25vh;
 	width: 12.5vw;
 	text-align: center;
-	padding: 20px;
 }
-
 
 .c-letters {
 	font-family: var(--cyrillic-font);
@@ -20,29 +22,48 @@
 }
 
 .flash-card {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	width: 12.5vw;
+	height: 25vh;
+	cursor: pointer;
+}
+
+.flash-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 1.2s ease;
+	transform-style: preserve-3d;
+}
+
+.flash-card:hover .flash-card-inner {
+	transform: rotateY(180deg);
 }
 
 .card-side {
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	backface-visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-front {
+	background-color: #fff;
 }
 
 .card-back {
-  transform: rotateY(180deg);
-}
-
-.card-front:hover {
-  transform: rotateY(-180deg);
-}
-
-.card-back:hover {
-  transform: rotateY(180deg);
+  background-color: #fff;
+	transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
 }
 
 /* 
