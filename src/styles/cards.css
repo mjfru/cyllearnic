@@ -8,11 +8,6 @@
 	padding: 20px;
 }
 
-.flash-card {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
 .c-letters {
 	font-family: var(--cyrillic-font);
@@ -23,3 +18,57 @@
 .flash-letters {
 	font-size: var(--flashcard-letter-size);
 }
+
+.flash-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+.card-side {
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front:hover {
+  transform: rotateY(-180deg);
+}
+
+.card-back:hover {
+  transform: rotateY(180deg);
+}
+
+/* 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.card__side {
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card__side--back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+*/
