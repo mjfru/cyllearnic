@@ -25,8 +25,6 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	width: 12.5vw;
-	height: 25vh;
 	cursor: pointer;
 }
 
@@ -36,6 +34,8 @@
 	height: 100%;
 	transition: transform 1.2s ease;
 	transform-style: preserve-3d;
+  border: 2px dotted black;
+  border-radius: 10px;
 }
 
 .flash-card:hover .flash-card-inner {
@@ -46,7 +46,6 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
 	text-align: center;
 	padding: 20px;
 	backface-visibility: hidden;
@@ -55,41 +54,8 @@
 	justify-content: center;
 }
 
-.card-front {
-	background-color: #fff;
-}
-
 .card-back {
-  background-color: #fff;
 	transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
 }
-
-/* 
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-}
-.card__side {
-  transition: all 0.8s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-
-.card__side--back {
-  transform: rotateY(180deg);
-}
-
-.card:hover .card__side--front {
-  transform: rotateY(-180deg);
-}
-.card:hover .card__side--back {
-  transform: rotateY(0deg);
-}
-*/
