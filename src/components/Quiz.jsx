@@ -1,21 +1,26 @@
-// import { useParams } from "react-router-dom";
-// import { russianCyrillic } from "../data/ru_cyrillic";
-// import { ukrainianCyrillic } from "../data/uk_cyrillic";
+import { useParams } from "react-router-dom";
+import { russianCyrillic } from "../data/ru_cyrillic";
+import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import ActivityNav from "./ActivityNav";
 import { useState } from "react";
 
-// const datasets = {
-// 	russian: russianCyrillic,
-// 	ukrainian: ukrainianCyrillic,
-// };
+const datasets = {
+	russian: russianCyrillic,
+	ukrainian: ukrainianCyrillic,
+};
 
 const Quiz = () => {
-	const [ userAnswer, setUserAnswer ] = useState("");
-  console.log(userAnswer);
-  
+	const [userAnswer, setUserAnswer] = useState("");
+	console.log(userAnswer);
 
-	// const { language } = useParams();
-	// const selectedLanguage = datasets[language];
+	const { language } = useParams();
+	const selectedLanguage = datasets[language];
+	console.log(selectedLanguage);
+
+  /*
+  * For quiz all (default), get one random letter from the selected language array and display it.
+  * An onClick, for now, takes this letter out of the array, and displays a new one, repeating until there's none left and displaying a placeholder message.
+  */
 
 	// const quizFive = [];
 	// const quizTen = [];
@@ -26,7 +31,9 @@ const Quiz = () => {
 			<h1 className="quiz-test">This is the future home of quizzes.</h1>
 			<ActivityNav />
 			<div className="quiz-container">
-				<p>Quiz Placeholder</p>
+				<div className="quiz-card">
+					<p>Quiz Placeholder</p>
+				</div>
 				<div className="quiz-select">
 					<label htmlFor="">Quiz All Letters:</label>
 					<input type="radio" name="quizSelect" id="" defaultChecked />
