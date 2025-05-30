@@ -5,35 +5,43 @@ import ActivityNav from "./ActivityNav";
 import { useEffect, useState } from "react";
 import QuizCard from "./QuizCard";
 
-useEffect;
-
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
 };
 
-const Quiz = () => {
-	const [userAnswer, setUserAnswer] = useState("");
-	// console.log(userAnswer);
+//* Helper function to shuffle the language arrays:
+const shuffle = (array) => {
+  // Randomize the order of the array elements:
+	return [...array].sort(() => Math.random() - 0.5);
+};
 
+const Quiz = () => {
+	//* Dynamically adjust to what language is selected
 	const { language } = useParams();
+	//* Store them in a new array to use
 	const letters = datasets[language];
-	// console.log(selectedLanguage);
+	const [quizLetters, setQuizLetters] = useState([]);
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [userAnswer, setUserAnswer] = useState("");
+
+	//* useEffect will shuffle and store letters when this component mounts:
+	useEffect(() => {
+		const shuffledLetters = shuffle(letters);
+		setQuizLetters(shuffledLetters);
+		setCurrentIndex(0);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [language]);
+
+	if (quizLetters.length === 0) return <p>Loading...</p>;
+
+	const currentLetter = quizLetters[currentIndex];
+	const { letterUpper, letterLower } = currentLetter;
 
 	const handleChange = (e) => {
 		e.preventDefault();
 		setUserAnswer(e.target.value);
 	};
-
-	const getRandomLetter = () => {
-		const randomLetter = letters[Math.floor(Math.random() * letters.length)];
-		// console.log(randomLetter);
-		return randomLetter;
-	};
-
-	const quizLetter = getRandomLetter();
-	const { letterUpper, letterLower } = quizLetter;
-	// console.log(quizLetter);
 
 	/*
 	//  * For quiz all (default), get one random letter from the selected language array and display it.
@@ -64,12 +72,9 @@ const Quiz = () => {
 
 export default Quiz;
 
-
-
-	// const quizFive = [];
-	// const quizTen = [];
-	// const quizAll = [];
-
+// const quizFive = [];
+// const quizTen = [];
+// const quizAll = [];
 
 {
 	/* <div className="quiz-select">
@@ -81,3 +86,14 @@ export default Quiz;
 					<input type="radio" name="quizSelect" id="" />
 				</div> */
 }
+
+
+	// const getRandomLetter = () => {
+	// 	const randomLetter = letters[Math.floor(Math.random() * letters.length)];
+	// 	// console.log(randomLetter);
+	// 	return randomLetter;
+	// };
+
+	// const quizLetter = getRandomLetter();
+
+	// console.log(quizLetter);
