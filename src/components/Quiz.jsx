@@ -12,31 +12,63 @@ const datasets = {
 
 //* Helper function to shuffle the language arrays:
 const shuffle = (array) => {
-  // Randomize the order of the array elements:
+	// Randomize the order of the array elements in a new, copied array:
 	return [...array].sort(() => Math.random() - 0.5);
 };
 
 const Quiz = () => {
-	//* Dynamically adjust to what language is selected
+	//* Dynamically adjust to what language is selected, same as previous components
 	const { language } = useParams();
 	//* Store them in a new array to use
 	const letters = datasets[language];
+
+	//* useState for getting, setting, and randomizing quizzes:
 	const [quizLetters, setQuizLetters] = useState([]);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [userAnswer, setUserAnswer] = useState("");
 
+	//* useState for tracking the quiz (score, ending, etc.):
+	const [score, setScore] = useState(0);
+	const [quizFinished, setQuizFinished] = useState(false);
+
 	//* useEffect will shuffle and store letters when this component mounts:
 	useEffect(() => {
 		const shuffledLetters = shuffle(letters);
+		console.log(shuffledLetters);
+
 		setQuizLetters(shuffledLetters);
 		setCurrentIndex(0);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [language]);
 
-	if (quizLetters.length === 0) return <p>Loading...</p>;
-
+	//* This sets a letterUpper/Lower to simply exist and get populated after the current letter is loaded.
+	// Destructuring immediately led to a Type Error.
+	let letterUpper = "";
+	let letterLower = "";
 	const currentLetter = quizLetters[currentIndex];
-	const { letterUpper, letterLower } = currentLetter;
+	if (currentLetter) {
+		({ letterUpper, letterLower } = currentLetter);
+	}
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		//* If there's no letter to be displayed, don't do anything:
+		if (!currentLetter) return;
+		//* Checking correct or incorrect entries and making them uniform:
+		const correctAnswer = currentLetter.pronunciation.toLowerCase().trim();
+		const userInput = userAnswer.toLowerCase().trim();
+		if (userInput === correctAnswer) {
+			setScore((previousScore) => previousScore + 1);
+		}
+		setUserAnswer("");
+
+		//* Display next letter until quiz is finished:
+		if (currentIndex + 1 < quizLetters.length) {
+			setCurrentIndex((previousIndex) => previousIndex + 1);
+		} else {
+			setQuizFinished(true);
+		}
+	};
 
 	const handleChange = (e) => {
 		e.preventDefault();
@@ -55,16 +87,30 @@ const Quiz = () => {
 			<ActivityNav />
 			<div className="quiz-container">
 				<div className="quiz-card">
-					<QuizCard letterUpper={letterUpper} letterLower={letterLower} />
+					{quizLetters.length === 0 ? (
+						<p>Loading Quiz...</p>
+					) : (
+						<QuizCard letterUpper={letterUpper} letterLower={letterLower} />
+					)}
 				</div>
-
-				<input
-					type="text"
-					value={userAnswer}
-					onChange={handleChange}
-					placeholder="What's this letter in English?"
-				/>
-				<button>Submit</button>
+				{quizFinished ? (
+					<div>
+						<p>
+							Your score: {score}/{quizLetters.length}
+						</p>
+						<button onClick={() => window.location.reload()}>Try Again</button>
+					</div>
+				) : (
+					<form onSubmit={handleSubmit}>
+						<input
+							type="text"
+							value={userAnswer}
+							onChange={handleChange}
+							placeholder="What's this letter in English?"
+						/>
+						<button type="submit">Submit</button>
+					</form>
+				)}
 			</div>
 		</main>
 	);
@@ -87,13 +133,12 @@ export default Quiz;
 				</div> */
 }
 
+// const getRandomLetter = () => {
+// 	const randomLetter = letters[Math.floor(Math.random() * letters.length)];
+// 	// console.log(randomLetter);
+// 	return randomLetter;
+// };
 
-	// const getRandomLetter = () => {
-	// 	const randomLetter = letters[Math.floor(Math.random() * letters.length)];
-	// 	// console.log(randomLetter);
-	// 	return randomLetter;
-	// };
+// const quizLetter = getRandomLetter();
 
-	// const quizLetter = getRandomLetter();
-
-	// console.log(quizLetter);
+// console.log(quizLetter);
