@@ -94,17 +94,16 @@ const Quiz = () => {
 			<h1 className="quiz-test">This is the future home of quizzes.</h1>
 			<ActivityNav />
 			<div className="quiz-container">
-				<div className="quiz-card">
-					{quizLetters.length === 0 ? (
-						<p>Loading Quiz...</p>
-					) : (
-						<QuizCard
-							letterUpper={letterUpper}
-							letterLower={letterLower}
-							answerStatus={answerStatus}
-						/>
-					)}
-				</div>
+				{quizLetters.length === 0 ? (
+					<p>Loading Quiz...</p>
+				) : (
+					<QuizCard
+						letterUpper={letterUpper}
+						letterLower={letterLower}
+						answerStatus={answerStatus}
+					/>
+				)}
+
 				{quizFinished ? (
 					<div>
 						<p>

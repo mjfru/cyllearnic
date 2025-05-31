@@ -1,15 +1,19 @@
 :root {
-  /* Colours */
-  --background-main: #f6f6f6;
-  --primary-text: #222222;
-  --secondary-text: #5a6474;
-  --primary-accent: #8b0000;
-  --secondary-accent: #2e3a59;
-  --highlight: #d4af37;
-  --border: #e3d3d3; 
+	/* Colours */
+	--background-main: #f6f6f6;
+	--primary-text: #222222;
+	--secondary-text: #5a6474;
+	--primary-accent: #8b0000;
+	--secondary-accent: #2e3a59;
+	--highlight: #d4af37;
 
-  /* Fonts */
-  --cyrillic-font: "Noto Sans", sans-serif;
-  --card-letter-size: 2.5rem;
-  --flashcard-letter-size: 4rem;
+	/* Fonts */
+	--cyrillic-font: "Noto Sans", sans-serif;
+	--card-letter-size: 2.5rem;
+	--flashcard-letter-size: 4rem;
+
+	/* Borders */
+  --border: 4px solid #c5bebe;
+	--border-color: #c5bebe;
+	--border-radius: 10px;
 }

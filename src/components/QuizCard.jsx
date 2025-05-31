@@ -9,7 +9,7 @@ const QuizCard = ({ letterUpper, letterLower, answerStatus }) => {
 					: ""
 			}`}
 		>
-			<h2>
+			<h2 className="quiz-letter">
 				{letterUpper} {letterLower}
 			</h2>
 		</div>

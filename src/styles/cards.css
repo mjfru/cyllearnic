@@ -1,11 +1,11 @@
 .reg-card {
 	padding: 20px;
-	border: 2px solid black;
+	border: var(--border);
 }
 
 .reg-card,
 .flash-card {
-	border-radius: 10px;
+	border-radius: var(--border-radius);
 	height: 25vh;
 	width: 12.5vw;
 	text-align: center;
@@ -34,8 +34,8 @@
 	height: 100%;
 	transition: transform 1.2s ease;
 	transform-style: preserve-3d;
-	border: 2px dotted black;
-	border-radius: 10px;
+	border: 4px dotted var(--border-color);
+	border-radius: var(--border-radius);
 }
 
 .flash-card:hover .flash-card-inner {
@@ -60,9 +60,31 @@
 	flex-direction: column;
 }
 
+/* Quiz Section */
+
+.quiz-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem;
+}
+
 .quiz-card {
-	border: 4px solid transparent;
+	min-width: 25%;
+	height: 30vh;
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: var(--border);
+	border-radius: var(--border-radius);
 	transition: border-color 0.3s ease;
+}
+
+.quiz-card .quiz-letter {
+	font-family: var(--cyrillic-font);
+	font-size: 4rem;
 }
 
 .quiz-correct-border {
