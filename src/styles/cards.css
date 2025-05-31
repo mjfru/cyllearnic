@@ -34,8 +34,8 @@
 	height: 100%;
 	transition: transform 1.2s ease;
 	transform-style: preserve-3d;
-  border: 2px dotted black;
-  border-radius: 10px;
+	border: 2px dotted black;
+	border-radius: 10px;
 }
 
 .flash-card:hover .flash-card-inner {
@@ -56,6 +56,19 @@
 
 .card-back {
 	transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+.quiz-card {
+	border: 4px solid transparent;
+	transition: border-color 0.3s ease;
+}
+
+.quiz-correct-border {
+	border-color: green;
+}
+
+.quiz-incorrect-border {
+	border-color: red;
 }

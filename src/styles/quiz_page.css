@@ -1,3 +1,8 @@
-.quiz-test{
-  color: var(--highlight);
+.quiz-test {
+	color: var(--highlight);
+}
+
+.btn-submit:disabled {
+	color: #ccc;
+	cursor: not-allowed;
 }

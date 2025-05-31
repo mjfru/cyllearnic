@@ -12,7 +12,7 @@ const datasets = {
 
 //* Helper function to shuffle the language arrays:
 const shuffle = (array) => {
-	// Randomize the order of the array elements in a new, copied array:
+	//* Randomize the order of the array elements in a new, copied array:
 	return [...array].sort(() => Math.random() - 0.5);
 };
 
@@ -29,20 +29,21 @@ const Quiz = () => {
 
 	//* useState for tracking the quiz (score, ending, etc.):
 	const [score, setScore] = useState(0);
+	//* This is added to prevent a double-trigger:
+	const [hasAnswered, setHasAnswered] = useState(false);
+	const [answerStatus, setAnswerStatus] = useState(null);
 	const [quizFinished, setQuizFinished] = useState(false);
 
 	//* useEffect will shuffle and store letters when this component mounts:
 	useEffect(() => {
 		const shuffledLetters = shuffle(letters);
-		console.log(shuffledLetters);
-
 		setQuizLetters(shuffledLetters);
 		setCurrentIndex(0);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [language]);
 
 	//* This sets a letterUpper/Lower to simply exist and get populated after the current letter is loaded.
-	// Destructuring immediately led to a Type Error.
+	//? Destructuring immediately led to a Type Error.
 	let letterUpper = "";
 	let letterLower = "";
 	const currentLetter = quizLetters[currentIndex];
@@ -53,33 +54,40 @@ const Quiz = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		//* If there's no letter to be displayed, don't do anything:
-		if (!currentLetter) return;
+		if (!currentLetter || hasAnswered) return;
+		setHasAnswered(true);
 		//* Checking correct or incorrect entries and making them uniform:
 		const correctAnswer = currentLetter.pronunciation.toLowerCase().trim();
 		const userInput = userAnswer.toLowerCase().trim();
+
 		if (userInput === correctAnswer) {
 			setScore((previousScore) => previousScore + 1);
-		}
-		setUserAnswer("");
-
-		//* Display next letter until quiz is finished:
-		if (currentIndex + 1 < quizLetters.length) {
-			setCurrentIndex((previousIndex) => previousIndex + 1);
+			setAnswerStatus("correct");
 		} else {
-			setQuizFinished(true);
+			setAnswerStatus("incorrect");
 		}
+
+		//* Using setTimeout() to briefly 'hang' the answer status and show quick feedback to the user.
+		setTimeout(() => {
+			//* Reset input & answer status
+			setAnswerStatus(null);
+			setUserAnswer("");
+			//* This will allow the next input but prevent a double-trigger:
+			setHasAnswered(false);
+			//* Display next letter until quiz is finished:
+			if (currentIndex + 1 < quizLetters.length) {
+				//* Cycles through the array since it's already randomized, no need to remove items every time.
+				setCurrentIndex((previousIndex) => previousIndex + 1);
+			} else {
+				setQuizFinished(true);
+			}
+		}, 500);
 	};
 
 	const handleChange = (e) => {
 		e.preventDefault();
 		setUserAnswer(e.target.value);
 	};
-
-	/*
-	//  * For quiz all (default), get one random letter from the selected language array and display it.
-	 * An onClick, for now, takes this letter out of the array, and displays a new one, repeating until there's none left and displaying a placeholder message.
-   * Will incorporate useState to hold an initial array and remove items via .filter()
-	 */
 
 	return (
 		<main>
@@ -90,7 +98,11 @@ const Quiz = () => {
 					{quizLetters.length === 0 ? (
 						<p>Loading Quiz...</p>
 					) : (
-						<QuizCard letterUpper={letterUpper} letterLower={letterLower} />
+						<QuizCard
+							letterUpper={letterUpper}
+							letterLower={letterLower}
+							answerStatus={answerStatus}
+						/>
 					)}
 				</div>
 				{quizFinished ? (
@@ -108,7 +120,13 @@ const Quiz = () => {
 							onChange={handleChange}
 							placeholder="What's this letter in English?"
 						/>
-						<button type="submit">Submit</button>
+						<button
+							className="btn btn-submit"
+							type="submit"
+							disabled={userAnswer.trim() === "" || hasAnswered}
+						>
+							Submit
+						</button>
 					</form>
 				)}
 			</div>
@@ -117,6 +135,14 @@ const Quiz = () => {
 };
 
 export default Quiz;
+
+/*
+TODO:
+  - Button to start quiz, first landing on a page with instructions
+  - Live score tracker
+  - Right / wrong answer feedback (flash green/red, etc.) -- DONE
+  - Quiz mode options: 5/10/All(default)
+*/
 
 // const quizFive = [];
 // const quizTen = [];
@@ -132,13 +158,3 @@ export default Quiz;
 					<input type="radio" name="quizSelect" id="" />
 				</div> */
 }
-
-// const getRandomLetter = () => {
-// 	const randomLetter = letters[Math.floor(Math.random() * letters.length)];
-// 	// console.log(randomLetter);
-// 	return randomLetter;
-// };
-
-// const quizLetter = getRandomLetter();
-
-// console.log(quizLetter);
