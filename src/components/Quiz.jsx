@@ -91,7 +91,7 @@ const Quiz = () => {
 
 	return (
 		<main>
-			<h1 className="quiz-test">This is the future home of quizzes.</h1>
+			<h2>Quiz</h2>
 			<ActivityNav />
 			<div className="quiz-container">
 				{quizLetters.length === 0 ? (
@@ -134,14 +134,6 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
-/*
-TODO:
-  - Button to start quiz, first landing on a page with instructions
-  - Live score tracker
-  - Right / wrong answer feedback (flash green/red, etc.) -- DONE
-  - Quiz mode options: 5/10/All(default)
-*/
 
 // const quizFive = [];
 // const quizTen = [];

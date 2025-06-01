@@ -4,11 +4,13 @@
 }
 
 .nav-header {
-  background-color: var(--primary-accent);
+  background-color: var(--header-background);
   height: 12vh;
+  border-bottom: 6px solid var(--highlight-bright);
 }
 
 .footer-container {
-  background-color: steelblue;
+  border-top: 6px solid var(--highlight-bright);
+  background-color: var(--footer-background);
   height: 10vh;
 }

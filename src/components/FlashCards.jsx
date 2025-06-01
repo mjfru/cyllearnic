@@ -16,7 +16,7 @@ const FlashCards = () => {
 
 	return (
 		<>
-			<h1>Flashcards</h1>
+			<h2>Flashcards</h2>
 			<ActivityNav />
 			<div className="flashcard-container">
 				{selectedLanguage.map((letter) => {

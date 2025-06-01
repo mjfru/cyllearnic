@@ -15,23 +15,28 @@ Components:
 
   - Main Hero
     - Title / Subtitle Content
-    - Button(s) for each available language, with English and native spelling
+    - Button(s) for each available language, with English and native spelling -- IN PROCESS...
 
   - Language homepage
-    - Letter Cards - Cyrillic Letter, Pronunciation, Example Word
-    - Flashcard Page
-      - Rotatable Cards
+    - Letter Cards - Cyrillic Letter, Pronunciation, Example Word -- DONE
+    - Flashcard Page -- DONE
+      - Rotatable Cards -- DONE
+    
     - Quiz Page
-      - Text Inputs to Compare
-      - Statistics
+      - Text Inputs to Compare -- DONE
+      - Statistics -- DONE
 
-    - Footer
-      - Made By... & Date
-      - Personal Links
-      "This project is focused on helping users learn and appreciate the diversity of Cyrillic alphabets. We aim to approach all languages with respect and neutrality."
+    - Footer -- DONE
+      - Made By... & Date -- DONE
+      - Personal Links -- DONE
+      "This project is focused on helping users learn and appreciate the diversity of Cyrillic alphabets. We aim to approach all languages with respect and neutrality." -- DONE
 
 Stretch Goals:
   - Bonus section for obsolete / historical letters (Russian especially)
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
   - Toggle option for text style (typed vs. a hand-written font)
+  - Live score tracker for quizzes
+  - A right/wrong bank for live feedback during quizzes
+  - Quiz mode options: 5/10/All(default) letters
+  - Custom color schemes for each language
