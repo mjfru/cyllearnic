@@ -11,6 +11,7 @@
 
 	/* Fonts */
 	--cyrillic-font: "Noto Sans", sans-serif;
+  --cyrillic-cursive: "Great Vibes", cursive;
 	--card-letter-size: 2.5rem;
 	--flashcard-letter-size: 4rem;
 
