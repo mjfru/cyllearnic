@@ -20,8 +20,8 @@ const LanguageStudy = () => {
 		<main>
 			<h2>Language Study Page</h2>
 			{/* Placeholder examples for conditional rendering later... */}
-			{language === "russian" && <p>Russian!</p>}
-			{language === "ukrainian" && <p>Ukrainian!</p>}
+			{/* {language === "russian" && <p>Russian!</p>}
+			{language === "ukrainian" && <p>Ukrainian!</p>} */}
 			<ActivityNav />
 			<div className="study-container">
 				{selectedLanguage.map((letter) => {

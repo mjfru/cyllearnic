@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import LanguageStudy from "./components/LanguageStudy";
 import FlashCards from "./components/FlashCards";
 import Quiz from "./components/Quiz";
+import AboutPage from "./components/AboutPage";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<main className="main-content">
 					<Routes>
 						<Route path="/" element={<Home />} />
+						<Route path="/about" element={<AboutPage />} />
 						<Route path="/study/:language" element={<LanguageStudy />} />
 						<Route path="/flashcards/:language" element={<FlashCards />} />
 						<Route path="/quiz/:language" element={<Quiz />} />

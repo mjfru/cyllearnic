@@ -8,6 +8,10 @@ h1, h2 {
   justify-content: center;
 }
 
+.activity-link {
+  margin: 2rem;
+}
+
 .main-content {
   min-height: 80vh;
   width: 90vw;

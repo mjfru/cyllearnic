@@ -4,9 +4,9 @@ const Header = () => {
 	const navigate = useNavigate();
 
 	const handleChange = (e) => {
-		const selectedLanguage = e.target.value;
-		if (selectedLanguage) {
-			navigate(`/study/${selectedLanguage}`);
+		const targetLanguage = e.target.value;
+		if (targetLanguage) {
+			navigate(`/study/${targetLanguage}`);
 		}
 	};
 
@@ -17,13 +17,16 @@ const Header = () => {
 			</Link>
 
 			<nav className="nav-container">
-				<Link to="/">Home</Link>
-				<Link to="">About</Link>
-				<div className="language-nav">
-					<p>Switch Language: </p>
-					<select name="" id="" onChange={handleChange}>
-						<option value="" disabled>
-							{/* Why is this disappearing after initial render? -- Maybe move this into a component by itself */}
+				<Link to="/" className="nav-link">
+					Home
+				</Link>
+				<Link to="/about" className="nav-link">
+					About
+				</Link>
+				<div className="language-nav-container nav-link">
+					<label>Switch Language: </label>
+					<select onChange={handleChange}>
+						<option value="" selected>
 							Choose a language
 						</option>
 						<option value="russian">Russian</option>
