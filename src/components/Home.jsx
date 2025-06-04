@@ -4,7 +4,7 @@ const Main = () => {
 	return (
 		<>
 			<div className="main-headers">
-				<h1>Welcome to Cyllearnic</h1>
+				<h1 className="text-3xl font-bold underline">Welcome to Cyllearnic</h1>
 				<h2>Choose your desired Cyrillic alphabet to study:</h2>
 			</div>
 			<nav className="lang-select-container">

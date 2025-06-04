@@ -12,6 +12,7 @@
 	/* Fonts */
 	--cyrillic-font: "Noto Sans", sans-serif;
   --cyrillic-cursive: "Great Vibes", cursive;
+  --latin-font: Times New Roman;
 	--card-letter-size: 2.5rem;
 	--flashcard-letter-size: 4rem;
 
@@ -20,4 +21,8 @@
 	--border-color: #c5bebe;
 	--border-radius: 8px;
 	--box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--latin-font);
 }
