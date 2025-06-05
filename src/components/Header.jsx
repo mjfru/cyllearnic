@@ -13,7 +13,7 @@ const Header = () => {
 	return (
 		<header className="header">
 			<Link to="/">
-				<h3 className="logo">Cyllearnic</h3>
+				<h2 className="logo">Cyllearnic</h2>
 			</Link>
 
 			<nav className="nav-container">
@@ -25,12 +25,12 @@ const Header = () => {
 				</Link>
 				<div className="language-nav-container nav-link">
 					<label>Switch Language: </label>
-					<select onChange={handleChange}>
-						<option value="" selected>
-							Choose a language
+					<select onChange={handleChange} className="language-option">
+						<option value="" selected  className="language-option">
+							---
 						</option>
-						<option value="russian">Russian</option>
-						<option value="ukrainian">Ukrainian</option>
+						<option value="russian" className="language-option">Russian</option>
+						<option value="ukrainian" className="language-option">Ukrainian</option>
 					</select>
 				</div>
 			</nav>

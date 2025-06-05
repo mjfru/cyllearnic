@@ -31,7 +31,8 @@ const Quiz = () => {
 	const [score, setScore] = useState(0);
 	//* This is added to prevent a double-trigger:
 	const [hasAnswered, setHasAnswered] = useState(false);
-	const [answerStatus, setAnswerStatus] = useState(null);
+	
+  const [answerStatus, setAnswerStatus] = useState(null);
 	const [quizFinished, setQuizFinished] = useState(false);
 
 	//* useEffect will shuffle and store letters when this component mounts:

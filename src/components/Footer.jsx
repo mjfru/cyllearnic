@@ -3,14 +3,8 @@ const Footer = () => {
 
 	return (
 		<footer className="footer-container">
-			<p>
-				This project is focused on helping users learn and appreciate the
-				diversity of Cyrillic alphabets and the cultures that use them. All
-				countries, languages, and cultures are approached with respect and
-				neutrality.
-			</p>
 			<h3>Hand-coded and Maintained by MJF - {currentYear}</h3>
-			<div>
+			<div className="personal-link-container">
 				<a href="https://github.com/mjfru" target="_blank">
 					Github
 				</a>
@@ -18,6 +12,12 @@ const Footer = () => {
 					Developer Portfolio
 				</a>
 			</div>
+			<p>
+				This project is focused on helping users learn and appreciate the
+				diversity of Cyrillic alphabets and the cultures that use them. All
+				countries, languages, and cultures are approached with respect and
+				neutrality.
+			</p>
 		</footer>
 	);
 };
