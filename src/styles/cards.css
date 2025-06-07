@@ -17,6 +17,10 @@
 	margin-bottom: 1.5rem;
 }
 
+.letter-details p {
+  margin: 0 auto;
+}
+
 .flash-letters {
 	font-size: var(--flashcard-letter-size);
 }

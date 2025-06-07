@@ -26,7 +26,7 @@ const Header = () => {
 				<div className="language-nav-container nav-link">
 					<label>Switch Language: </label>
 					<select onChange={handleChange} className="language-option">
-						<option value="" selected  className="language-option">
+						<option value="" defaultValue="---" className="language-option">
 							---
 						</option>
 						<option value="russian" className="language-option">Russian</option>
