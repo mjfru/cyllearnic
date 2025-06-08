@@ -1,11 +1,7 @@
-const ToggleScript = ({ fontType, setFontType }) => {
-	console.log(`State value upon loading is: ${fontType}.}`);
+import { useGlobalContext } from "../context";
 
-	const handleChange = (e) => {
-		console.log(`Checked value is: ${e.target.checked}`);
-		console.log(`State is: ${fontType}`);
-		setFontType(!fontType);
-	};
+const ToggleScript = () => {
+  const { fontType, toggleFont } = useGlobalContext();
 
 	return (
 		<div className="form-check form-switch">
@@ -14,8 +10,9 @@ const ToggleScript = ({ fontType, setFontType }) => {
 				type="checkbox"
 				role="switch"
 				id="switchCheckDefault"
-				value={fontType}
-				onChange={handleChange}
+        checked={!fontType}
+				// value={fontType}
+				onChange={toggleFont}
 			/>
 			<label className="form-check-label" htmlFor="switchCheckDefault">
 				Toggle Print / Cursive

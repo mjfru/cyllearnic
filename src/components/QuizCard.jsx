@@ -1,4 +1,8 @@
+import { useGlobalContext } from "../context";
+
 const QuizCard = ({ letterUpper, letterLower, answerStatus }) => {
+	const { fontType } = useGlobalContext();
+
 	return (
 		<div
 			className={`quiz-card ${
@@ -9,7 +13,11 @@ const QuizCard = ({ letterUpper, letterLower, answerStatus }) => {
 					: ""
 			}`}
 		>
-			<h2 className="quiz-letter">
+			<h2
+				className={
+					fontType ? "cyrillic quiz-letter " : "cyrillic cursive quiz-letter"
+				}
+			>
 				{letterUpper} {letterLower}
 			</h2>
 		</div>

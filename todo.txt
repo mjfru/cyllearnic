@@ -37,7 +37,7 @@ Stretch Goals:
   - Bonus section for obsolete / historical letters (Russian especially)
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
-  - Toggle option for text style (typed vs. a hand-written font) -- IN PROCESS
+  - Toggle option for text style (typed vs. a hand-written font) -- DONE
   - Live score tracker for quizzes
   - A right/wrong bank for live feedback during quizzes
   - Quiz mode options: 5/10/All(default) letters

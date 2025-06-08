@@ -1,3 +1,5 @@
+import { useGlobalContext } from "../context";
+
 const LetterCard = ({
 	// id,
 	letterUpper,
@@ -6,9 +8,11 @@ const LetterCard = ({
 	example,
 	meaning,
 }) => {
+  const { fontType } = useGlobalContext();
+
 	return (
 		<div className="reg-card">
-			<h4 className="c-letters">
+			<h4 className={fontType ? 'cyrillic' : "cyrillic cursive"}>
 				{letterUpper} {letterLower}
 				<hr className="letter-line" />
 			</h4>

@@ -1,10 +1,19 @@
+import { useGlobalContext } from "../context";
+
 const FlashCard = ({ ...letter }) => {
 	const { letterUpper, letterLower, pronunciation, example, meaning } = letter;
+	const { fontType } = useGlobalContext();
 	return (
 		<div className="flash-card">
 			<div className="flash-card-inner">
 				<div className="card-side card-front">
-					<h4 className="c-letters flash-letters">
+					<h4
+						className={
+							fontType
+								? "cyrillic flash-letters"
+								: "cyrillic cursive flash-letters"
+						}
+					>
 						{letterUpper} {letterLower}
 					</h4>
 				</div>

@@ -1,10 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import ToggleScript from "./ToggleScript";
-import { useState } from "react";
 
 const ActivityNav = () => {
 	const { language } = useParams();
-  const [ fontType, setFontType ] = useState(true)
+  
 
 	return (
 		<>
@@ -20,7 +19,7 @@ const ActivityNav = () => {
 				</Link>
 			</div>
 			<div className="toggle-container">
-				<ToggleScript fontType={fontType} setFontType={setFontType}/>
+				<ToggleScript />
 			</div>
 		</>
 	);
