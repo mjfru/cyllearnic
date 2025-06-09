@@ -1,8 +1,8 @@
 :root {
 	/* Colours */
-	--background-main: #fdfdfd;
-	--header-background: #f4f4f6;
-	--footer-background: #5f72a3;
+	--background-header: #f4f1ee;
+	--background-main: #f4f4f6;
+	--background-footer: #5f72a3;
 	--primary-text: #222222;
 	--secondary-text: #5f6c7b;
 	--primary-accent: #8b0000;
@@ -16,9 +16,13 @@
 	--card-letter-size: 2.5rem;
 	--flashcard-letter-size: 4rem;
 
+  /* Sizes */
+  --logo-size: 2.5rem;
+  --sub-header-size: 1.15rem;
+
 	/* Borders & Shadows */
-	--border: 4px solid #c5bebe;
 	--border-color: #c5bebe;
+	--border: 2px solid #c5bebe;
 	--border-radius: 8px;
 	--box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }

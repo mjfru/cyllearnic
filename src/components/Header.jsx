@@ -12,9 +12,12 @@ const Header = () => {
 
 	return (
 		<header className="header">
-			<Link to="/">
-				<h2 className="logo">Cyllearnic</h2>
-			</Link>
+			<div className="logo-container">
+				<Link to="/" className="logo-link">
+					<h1 className="logo">Cyllearnic</h1>
+				</Link>
+				<h2 className="sub-header">A WebApp for Learning Cyrillic Script </h2>
+			</div>
 
 			<nav className="nav-container">
 				<Link to="/" className="nav-link">
@@ -23,14 +26,22 @@ const Header = () => {
 				<Link to="/about" className="nav-link">
 					About
 				</Link>
-				<div className="language-nav-container nav-link">
-					<label>Switch Language: </label>
-					<select onChange={handleChange} className="language-option">
+
+				<div className="language-nav-container language-link">
+					<label htmlFor="language-select">Switch Language: </label>
+					<select
+						onChange={handleChange}
+						className="form-select form-select-sm language-option"
+					>
 						<option value="" defaultValue="---" className="language-option">
 							---
 						</option>
-						<option value="russian" className="language-option">Russian</option>
-						<option value="ukrainian" className="language-option">Ukrainian</option>
+						<option value="russian" className="language-option">
+							Russian
+						</option>
+						<option value="ukrainian" className="language-option">
+							Ukrainian
+						</option>
 					</select>
 				</div>
 			</nav>

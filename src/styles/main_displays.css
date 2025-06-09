@@ -17,6 +17,10 @@ h2 {
   height: 2rem;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 .main-content {
 	min-height: 80vh;
 	width: 90vw;
