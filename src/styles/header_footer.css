@@ -52,6 +52,17 @@
 	align-items: center;
 }
 
+.navigation-link, label {
+  color: var(--background-footer);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.navigation-link:hover {
+  font-weight: bold;
+  border-bottom: 2px solid var(--background-footer);
+}
+
 .language-nav-container {
 	display: flex;
 	align-items: center;
