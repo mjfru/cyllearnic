@@ -42,7 +42,12 @@
 }
 
 .sub-header {
+  font-family: var(--latin-font);
 	font-size: var(--sub-header-size);
+  color: var(--secondary-text);
+  font-style: oblique;
+  letter-spacing: 1.25px;
+  margin-top: -5px;
 }
 
 .nav-container {

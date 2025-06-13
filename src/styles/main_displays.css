@@ -7,18 +7,18 @@ h2 {
 	width: 90vw;
 	display: flex;
 	justify-content: center;
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .activity-link {
 	font-family: var(--latin-font);
-  margin: 0 2rem;
-  width: 6rem;
-  height: 2rem;
+	margin: 0 2rem;
+	width: 6rem;
+	height: 2rem;
 }
 
 input[type="checkbox"] {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .main-content {
@@ -34,14 +34,25 @@ input[type="checkbox"] {
 
 .lang-nav-btn {
 	cursor: pointer;
-	font-family: var(--latin-font);
+	font-family: var(--cyrillic-font);
 	font-weight: bold;
-	min-width: 12vw;
+  letter-spacing: 2px;
+  background-color: var(--background-footer);
+  color: var(--background-main);
+	min-width: 15vw;
 	height: 4vh;
 	margin: 1.25rem auto;
+	border: 2.5px solid var(--highlight-bright);
+	border-radius: 20px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.33);
+}
+
+.lang-nav-btn:active {
+	box-shadow: var(--box-shadow);
 }
 
 .lang-nav-btn:disabled {
+  border: none;
 	cursor: not-allowed;
 }
 

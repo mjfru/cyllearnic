@@ -9,10 +9,10 @@ const Main = () => {
 			</div>
 			<nav className="lang-select-container">
 				<Link to="/study/russian">
-					<button className="lang-nav-btn">Russian</button>
+					<button className="lang-nav-btn" id="rus-btn">Russian</button>
 				</Link>
 				<Link to="/study/ukrainian">
-					<button className="lang-nav-btn">Ukrainian</button>
+					<button className="lang-nav-btn" id="ukr-btn">Ukrainian</button>
 				</Link>
 				<Link to="/study/serbo_croatian">
 					<button className="lang-nav-btn" disabled>

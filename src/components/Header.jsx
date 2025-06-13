@@ -16,7 +16,7 @@ const Header = () => {
 				<Link to="/" className="logo-link">
 					<h1 className="logo">Cyllearnic</h1>
 				</Link>
-				<h2 className="sub-header">A WebApp for Learning Cyrillic Script </h2>
+				<h2 className="sub-header">A WebApp for Learning Cyrillic Scripts</h2>
 			</div>
 
 			<nav className="nav-container">
