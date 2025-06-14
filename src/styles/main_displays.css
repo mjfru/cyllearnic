@@ -3,6 +3,14 @@ h2 {
 	text-align: center;
 }
 
+.hero-content {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .activity-nav {
 	width: 90vw;
 	display: flex;
@@ -30,6 +38,7 @@ input[type="checkbox"] {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+  margin-top: 1rem;
 }
 
 .lang-nav-btn {
@@ -44,7 +53,12 @@ input[type="checkbox"] {
 	margin: 1.25rem auto;
 	border: 2.5px solid var(--highlight-bright);
 	border-radius: 20px;
-	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.33);
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.33);
+  transition: box-shadow .5s;
+}
+
+.lang-nav-btn:hover {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.55);
 }
 
 .lang-nav-btn:active {
@@ -54,6 +68,8 @@ input[type="checkbox"] {
 .lang-nav-btn:disabled {
   border: none;
 	cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: none;
 }
 
 .study-container,

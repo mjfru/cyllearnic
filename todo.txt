@@ -40,6 +40,7 @@ Stretch Goals:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
   - Toggle option for text style (typed vs. a hand-written font) -- DONE
   - Dark mode
+  - Shuffle button for flashcard page
   - Live score tracker for quizzes
   - A right/wrong bank for live feedback during quizzes
   - Quiz mode options: 5/10/All(default) letters

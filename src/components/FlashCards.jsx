@@ -15,7 +15,7 @@ const FlashCards = () => {
 	const selectedLanguage = datasets[language];
 
 	return (
-		<>
+		<main>
 			<h2>Flashcards</h2>
 			<ActivityNav />
 			<div className="flashcard-container">
@@ -23,7 +23,7 @@ const FlashCards = () => {
           return <FlashCard {...letter} key={letter.id}/>
 				})}
 			</div>
-		</>
+		</main>
 	);
 };
 

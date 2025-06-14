@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Main = () => {
 	return (
-		<>
+		<main className="hero-content">
 			<div className="main-headers">
-				<h1>Welcome to Cyllearnic</h1>
-				<h2>Choose your desired Cyrillic alphabet to study:</h2>
+				{/* <h1>Welcome to Cyllearnic</h1> */}
+				<h2>Choose a Cyrillic alphabet to study:</h2>
 			</div>
 			<nav className="lang-select-container">
 				<Link to="/study/russian">
@@ -30,7 +30,7 @@ const Main = () => {
 					</button>
 				</Link>
 			</nav>
-		</>
+		</main>
 	);
 };
 

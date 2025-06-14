@@ -12,12 +12,12 @@ const Footer = () => {
 					Developer Portfolio
 				</a>
 			</div>
-			<p>
-				This project is focused on helping users learn and appreciate the
-				diversity of Cyrillic alphabets and the cultures that use them. All
-				countries, languages, and cultures are approached with respect and
-				neutrality.
-			</p>
+				<p>
+					This project is focused on helping users learn and appreciate the
+					diversity of Cyrillic alphabets and the cultures that use them. All
+					countries, languages, and cultures are approached with respect and
+					neutrality.
+				</p>
 		</footer>
 	);
 };
