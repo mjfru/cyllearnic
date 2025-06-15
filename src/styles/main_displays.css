@@ -3,6 +3,12 @@ h2 {
 	text-align: center;
 }
 
+.page-heading{
+  text-transform: capitalize;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
 .hero-content {
   padding-top: 5rem;
   display: flex;
@@ -15,7 +21,7 @@ h2 {
 	width: 90vw;
 	display: flex;
 	justify-content: center;
-	margin: 1rem 0;
+	margin: 1rem 0 0 0;
 }
 
 .activity-link {
@@ -74,11 +80,9 @@ input[type="checkbox"] {
 
 .study-container,
 .flashcard-container {
-	border: 2px solid fuchsia;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 1rem;
+	gap: .5rem;
 	margin: 1rem;
-	padding: 2rem;
 	justify-items: center;
 }

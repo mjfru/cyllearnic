@@ -18,7 +18,7 @@ const LanguageStudy = () => {
 
 	return (
 		<main>
-			<h2>Language Study Page</h2>
+			<h2 className="page-heading">{language} Study Page</h2>
 			{/* Placeholder examples for conditional rendering later... */}
 			{/* {language === "russian" && <p>Russian!</p>}
 			{language === "ukrainian" && <p>Ukrainian!</p>} */}

@@ -16,7 +16,7 @@ const FlashCards = () => {
 
 	return (
 		<main>
-			<h2>Flashcards</h2>
+			<h2 className="page-heading">Flashcards</h2>
 			<ActivityNav />
 			<div className="flashcard-container">
 				{selectedLanguage.map((letter) => {

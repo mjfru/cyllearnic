@@ -6,7 +6,7 @@
 .reg-card,
 .flash-card {
 	border-radius: var(--border-radius);
-	height: 25vh;
+	min-height: 27vh;
 	width: 12.5vw;
 	text-align: center;
 }
