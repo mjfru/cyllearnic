@@ -1,0 +1,8 @@
+.info-container {
+	max-width: 60vw;
+	padding: 40px 80px;
+	border-right: 3px solid var(--highlight-bright);
+	border-bottom: 3px solid var(--highlight-bright);
+	line-height: 1.5;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
+}

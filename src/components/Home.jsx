@@ -16,7 +16,7 @@ const Main = () => {
 				</Link>
 				<Link to="/study/serbo_croatian">
 					<button className="lang-nav-btn" disabled>
-						Serbo-Croatian (Coming Soon)
+						Serbian (Coming Soon)
 					</button>
 				</Link>
 				<Link to="/study/bulgarian">

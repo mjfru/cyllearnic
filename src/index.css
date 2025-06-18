@@ -3,6 +3,7 @@
 @import "./styles/main_displays.css";
 @import "./styles/quiz_page.css";
 @import "./styles/variables.css";
+@import "./styles/information_pages.css";
 
 * {
 	margin: 0;

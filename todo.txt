@@ -16,7 +16,7 @@ Components:
 
   - Main Hero
     - Title / Subtitle Content
-    - Button(s) for each available language, with English and native spelling -- IN PROGRESS...
+    - Button(s) for each available language, with English and native spelling -- DONE
 
   - Language homepage -- DONE
     - Letter Cards - Cyrillic Letter, Pronunciation, Example Word -- DONE

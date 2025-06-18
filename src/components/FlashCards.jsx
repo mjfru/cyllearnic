@@ -14,6 +14,10 @@ const FlashCards = () => {
 	const { language } = useParams();
 	const selectedLanguage = datasets[language];
 
+  // Shuffle order of cards-- maybe in a seperate component & reset to default:
+
+  // Remove a card:
+
 	return (
 		<main>
 			<h2 className="page-heading">Flashcards</h2>
