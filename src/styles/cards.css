@@ -18,11 +18,12 @@
 }
 
 .cursive {
-  font-family: var(--cyrillic-cursive);
+	font-family: var(--cyrillic-cursive);
+	font-weight: bold;
 }
 
 .letter-details p {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .flash-letters {
@@ -91,7 +92,6 @@
 }
 
 .quiz-card .quiz-letter {
-
 	font-size: 6rem;
 }
 

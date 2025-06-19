@@ -3,32 +3,35 @@ h2 {
 	text-align: center;
 }
 
-.page-heading{
-  text-transform: capitalize;
-  margin-top: 1rem;
-  letter-spacing: 2px;
+.page-heading {
+	text-transform: capitalize;
+	margin-top: 1rem;
+	letter-spacing: 2px;
 }
 
 .hero-content {
-  padding-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .activity-nav {
-	width: 90vw;
 	display: flex;
 	justify-content: center;
 	margin: 1rem 0 0 0;
 }
 
 .activity-link {
-	font-family: var(--latin-font);
 	margin: 0 2rem;
 	width: 6rem;
-	height: 2rem;
+}
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 input[type="checkbox"] {
@@ -37,34 +40,38 @@ input[type="checkbox"] {
 
 .main-content {
 	min-height: 80vh;
-	width: 90vw;
+}
+
+.activity-nav,
+.main-content {
+	min-width: 80vw;
 }
 
 .lang-select-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .lang-nav-btn {
 	cursor: pointer;
 	font-family: var(--cyrillic-font);
 	font-weight: bold;
-  letter-spacing: 2px;
-  background-color: var(--background-footer);
-  color: var(--background-main);
+	letter-spacing: 2px;
+	background-color: var(--background-footer);
+	color: var(--background-main);
 	min-width: 15vw;
 	height: 4vh;
 	margin: 1.25rem auto;
 	border: 2.5px solid var(--highlight-bright);
 	border-radius: 20px;
 	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.33);
-  transition: box-shadow .5s;
+	transition: box-shadow 0.5s;
 }
 
 .lang-nav-btn:hover {
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.55);
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.55);
 }
 
 .lang-nav-btn:active {
@@ -72,17 +79,17 @@ input[type="checkbox"] {
 }
 
 .lang-nav-btn:disabled {
-  border: none;
+	border: none;
 	cursor: not-allowed;
-  opacity: 0.5;
-  box-shadow: none;
+	opacity: 0.5;
+	box-shadow: none;
 }
 
 .study-container,
 .flashcard-container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: .5rem;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 0.5rem;
 	margin: 1rem;
 	justify-items: center;
 }
