@@ -1,6 +1,6 @@
 .reg-card {
 	padding: 20px;
-	border: var(--border);
+	border: var(--card-border);
 }
 
 .reg-card,
@@ -20,6 +20,11 @@
 .cursive {
 	font-family: var(--cyrillic-cursive);
 	font-weight: bold;
+}
+
+.letter-line {
+  border-top: 3px solid var(--highlight-bright);
+	/* color: var(--highlight-bright); */
 }
 
 .letter-details p {

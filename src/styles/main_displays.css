@@ -39,7 +39,7 @@ input[type="checkbox"] {
 }
 
 .main-content {
-	min-height: 80vh;
+	min-height: 75vh;
 }
 
 .activity-nav,
@@ -59,7 +59,7 @@ input[type="checkbox"] {
 	font-family: var(--cyrillic-font);
 	font-weight: bold;
 	letter-spacing: 2px;
-	background-color: var(--background-footer);
+	background-color: var(--primary-accent);
 	color: var(--background-main);
 	min-width: 15vw;
 	height: 4vh;

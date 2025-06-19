@@ -5,9 +5,10 @@
 	--background-footer: #5f72a3;
 	--primary-text: #222222;
 	--secondary-text: #5f6c7b;
-	--primary-accent: #8b0000;
+  --primary-accent: #5f73a3;
 	--secondary-accent: #2e3a59;
 	--highlight-bright: #d4af37;
+	--highlight-dark: #8b0000;
 
 	/* Fonts */
 	--cyrillic-font: "Noto Sans", sans-serif;
@@ -23,6 +24,7 @@
 	/* Borders & Shadows */
 	--border-color: #c5bebe;
 	--border: 2px solid #c5bebe;
+  --card-border: 4px solid var(--primary-accent);
 	--border-radius: 8px;
 	--box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }

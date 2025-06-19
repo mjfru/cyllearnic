@@ -8,7 +8,7 @@
 
 .header {
 	background-color: var(--background-header);
-	height: 10vh;
+	height: 12.5vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -28,7 +28,7 @@
 	font-size: var(--logo-size);
 	letter-spacing: 10px;
 	color: var(--background-main);
-	background-color: var(--background-footer);
+	background-color: var(--primary-accent);
 	border: var(--border);
 	border-left: none;
 	border-right: none;
@@ -59,7 +59,7 @@
 
 .navigation-link,
 label {
-	color: var(--background-footer);
+	color: var(--primary-accent);
 	text-decoration: none;
 	letter-spacing: 1.75px;
 	font-weight: bold;
@@ -67,7 +67,7 @@ label {
 
 .navigation-link:hover {
 	font-weight: bold;
-	border-bottom: 2px solid var(--background-footer);
+	border-bottom: 2px solid var(--primary-accent);
 }
 
 .language-nav-container {
@@ -88,7 +88,7 @@ label {
 .footer-container {
 	border-top: 2px solid var(--highlight-bright);
 	background-color: var(--background-footer);
-	height: 10vh;
+	height: 12.5vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
