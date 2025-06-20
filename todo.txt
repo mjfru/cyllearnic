@@ -36,6 +36,8 @@ Components:
 
 Stretch Goals:
   - Bonus section for obsolete / historical letters (Russian especially)
+  - Apply cursive styles to examples as well when toggled
+  - Highlight the studied letter in the example word
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
   - Toggle option for text style (typed vs. a hand-written font) -- DONE

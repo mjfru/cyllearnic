@@ -243,7 +243,7 @@ export const ukrainianCyrillic = [
 		id: "uk31",
 		letterUpper: "Ь",
 		letterLower: "ь",
-		pronunciation: "Softens preceding consonant",
+		pronunciation: "Soft Sign",
 		example: "Вільний",
 		meaning: "Free",
 	},
