@@ -9,13 +9,13 @@ Requirements for MVP:
   - Utilize Bootstrap OR Tailwind CSS and custom CSS for toggles, inputs, etc.
 
 Components:
-  - Header
-    - Logo
+  - Header -- DONE
+    - Logo -- DONE
     - Dropdown Menu to choose a language -- DONE
-    - About page -- IN PROGRESS...
+    - About page -- DONE
 
   - Main Hero
-    - Title / Subtitle Content
+    - Title / Subtitle Content -- DONE
     - Button(s) for each available language, with English and native spelling -- DONE
 
   - Language homepage -- DONE

@@ -8,7 +8,6 @@ export const AppProvider = ({ children }) => {
 
 	const toggleFont = () => {
 		setFontType(!fontType);
-		// console.log("Seems to work!");
 		// console.log(`${fontType}`);
 	};
 

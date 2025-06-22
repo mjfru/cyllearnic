@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
+
 import ActivityNav from "./ActivityNav";
-import { useEffect, useState } from "react";
 import QuizCard from "./QuizCard";
 
 const datasets = {
@@ -67,7 +69,6 @@ const Quiz = () => {
 		} else {
 			setAnswerStatus("incorrect");
 		}
-
 		//* Using setTimeout() to briefly 'hang' the answer status and show quick feedback to the user.
 		setTimeout(() => {
 			//* Reset input & answer status
@@ -114,19 +115,21 @@ const Quiz = () => {
 					</div>
 				) : (
 					<form onSubmit={handleSubmit}>
-						<input
-							type="text"
-							value={userAnswer}
-							onChange={handleChange}
-							placeholder="What's this letter in English?"
-						/>
-						<button
-							className="btn btn-submit"
-							type="submit"
-							disabled={userAnswer.trim() === "" || hasAnswered}
-						>
-							Submit
-						</button>
+						<div className="answer-container">
+							<input
+								type="text"
+								value={userAnswer}
+								onChange={handleChange}
+								placeholder="What's this letter in English?"
+							/>
+							<button
+								className="btn-submit"
+								type="submit"
+								disabled={userAnswer.trim() === "" || hasAnswered}
+							>
+								Submit
+							</button>
+						</div>
 					</form>
 				)}
 			</div>
