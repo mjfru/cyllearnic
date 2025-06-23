@@ -20,6 +20,7 @@
 .cursive {
 	font-family: var(--cyrillic-cursive);
 	font-weight: bold;
+  margin-bottom: 0;
 }
 
 .letter-line {
