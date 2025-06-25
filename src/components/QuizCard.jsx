@@ -7,9 +7,9 @@ const QuizCard = ({ letterUpper, letterLower, answerStatus }) => {
 		<div
 			className={`quiz-card ${
 				answerStatus === "correct"
-					? "quiz-correct-border"
+					? "quiz-correct"
 					: answerStatus === "incorrect"
-					? "quiz-incorrect-border"
+					? "quiz-incorrect"
 					: ""
 			}`}
 		>
