@@ -20,7 +20,7 @@
 .cursive {
 	font-family: var(--cyrillic-cursive);
 	font-weight: bold;
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .letter-line {
@@ -35,7 +35,7 @@
 
 .pronunciation {
 	font-weight: bold;
-  font-size: 1.35rem;
+	font-size: 1.35rem;
 	color: var(--highlight-dark);
 }
 
@@ -86,8 +86,8 @@
 }
 
 .flash-pronunciation {
-  color: var(--highlight-dark);
-  font-size: 3rem;
+	color: var(--highlight-dark);
+	font-size: 3rem;
 }
 
 /* Quiz Section */
@@ -108,7 +108,8 @@
 	align-items: center;
 	border: var(--border);
 	border-radius: var(--border-radius);
-	transition: border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+	transition: border-color 0.3s ease, background-color 0.3s ease,
+		opacity 0.3s ease;
 }
 
 .quiz-card .quiz-letter {
@@ -117,11 +118,12 @@
 
 .quiz-correct {
 	border-color: var(--highlight-bright);
-  color: var(--secondary-accent);
-  background-color: #a6ce9d;
-  /* opacity: .25; */
+	color: var(--secondary-accent);
+	background-color: #a6ce9d;
+	/* opacity: .25; */
 }
 
 .quiz-incorrect {
 	border-color: red;
+	/*! Do next */
 }
