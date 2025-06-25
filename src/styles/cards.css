@@ -25,7 +25,7 @@
 
 .letter-line {
 	border-top: 2px solid var(--highlight-bright);
-	/* Bootstrap makes <hr> tags lighter... */
+	/*? Bootstrap makes <hr> tags lighter... */
 	opacity: 0.75;
 }
 
@@ -39,6 +39,7 @@
 	color: var(--highlight-dark);
 }
 
+/* Flash Cards */
 .flash-letters {
 	font-size: var(--flashcard-letter-size);
 }
@@ -56,8 +57,10 @@
 	height: 100%;
 	transition: transform 1.2s ease;
 	transform-style: preserve-3d;
-	border: 4px dotted var(--border-color);
-	border-radius: var(--border-radius);
+	border: 4px inset var(--primary-accent);
+	border-top-right-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
 }
 
 .flash-card:hover .flash-card-inner {
@@ -82,35 +85,43 @@
 	flex-direction: column;
 }
 
+.flash-pronunciation {
+  color: var(--highlight-dark);
+  font-size: 3rem;
+}
+
 /* Quiz Section */
 .quiz-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem;
+	margin: 1rem 2rem;
 }
 
 .quiz-card {
 	min-width: 25%;
 	height: 30vh;
-	margin: 2rem;
+	margin: 2rem 2rem 1rem 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: var(--border);
 	border-radius: var(--border-radius);
-	transition: border-color 0.3s ease;
+	transition: border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .quiz-card .quiz-letter {
 	font-size: 6rem;
 }
 
-.quiz-correct-border {
-	border-color: green;
+.quiz-correct {
+	border-color: var(--highlight-bright);
+  color: var(--secondary-accent);
+  background-color: #a6ce9d;
+  /* opacity: .25; */
 }
 
-.quiz-incorrect-border {
+.quiz-incorrect {
 	border-color: red;
 }
