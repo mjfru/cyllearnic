@@ -23,7 +23,7 @@
 
 	/* Borders & Shadows */
 	--border-color: #c5bebe;
-	--border: 2px solid #c5bebe;
+	--border: 5px solid #c5bebe;
   --card-border: 4px solid var(--primary-accent);
 	--border-radius: 8px;
 	--box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
