@@ -93,7 +93,7 @@ const Quiz = () => {
 
 	return (
 		<main>
-			<h2 className="page-heading">Quiz</h2>
+			<h2 className="page-heading">{language} Quiz</h2>
 			<ActivityNav />
 			<div className="quiz-container">
 				{quizLetters.length === 0 ? (
@@ -118,6 +118,7 @@ const Quiz = () => {
 						<div className="answer-container">
 							<input
 								type="text"
+                className="form-control"
 								value={userAnswer}
 								onChange={handleChange}
 								placeholder="What's this letter in English?"
