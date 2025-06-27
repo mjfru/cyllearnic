@@ -3,7 +3,7 @@ import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
 import ActivityNav from "./ActivityNav";
-import FlashCard from "./Flashcard";
+import FlashCard from "./FlashCard";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -14,9 +14,9 @@ const FlashCards = () => {
 	const { language } = useParams();
 	const selectedLanguage = datasets[language];
 
-  // Shuffle order of cards-- maybe in a seperate component & reset to default:
+	// Shuffle order of cards-- maybe in a seperate component & reset to default:
 
-  // Remove a card:
+	// Remove a card:
 
 	return (
 		<main>
@@ -24,7 +24,7 @@ const FlashCards = () => {
 			<ActivityNav />
 			<div className="flashcard-container">
 				{selectedLanguage.map((letter) => {
-          return <FlashCard {...letter} key={letter.id}/>
+					return <FlashCard {...letter} key={letter.id} />;
 				})}
 			</div>
 		</main>

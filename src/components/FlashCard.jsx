@@ -20,7 +20,7 @@ const FlashCard = ({ ...letter }) => {
 
 				<div className="card-side card-back">
 					<div>
-						<h4>{pronunciation}</h4>
+						<h4 className="flash-pronunciation">{pronunciation}</h4>
 					</div>
 					<div>
 						<h5>
