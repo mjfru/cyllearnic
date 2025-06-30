@@ -6,7 +6,7 @@ Requirements for MVP:
   - A language 'homepage', where all letters are in their own component with the letter itself, English-equivalent pronunciation, and an example word. -- DONE
   - An extension of this page that allows users to use each component as a flashcard, displaying only cyrillic on one side and the English-equivalent on the other. -- DONE
   - A quiz option, adding text inputs to the language homepage, animating right/wrong guesses, and keeping statistics of the quiz (xx/xx correct, xx%, etc.). -- IN PROCESS
-  - Utilize Bootstrap OR Tailwind CSS and custom CSS for toggles, inputs, etc.
+  - Utilize Bootstrap OR Tailwind CSS and custom CSS for toggles, inputs, etc. -- DONE
 
 Components:
   - Header -- DONE
@@ -23,7 +23,7 @@ Components:
   
   - Flashcard Page -- DONE
       - Rotatable Cards -- DONE
-      - Ability to remove a card if user feels the letter has been mastered
+      - Ability to remove a card if user feels the letter has been mastered -- IN PROCESS - NEEDS STYLING / TROUBLESHOOTING
     
     - Quiz Page
       - Text Inputs to Compare -- DONE

@@ -4,6 +4,7 @@ import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
 import ActivityNav from "./ActivityNav";
 import FlashCard from "./FlashCard";
+import { useState } from "react";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -14,17 +15,27 @@ const FlashCards = () => {
 	const { language } = useParams();
 	const selectedLanguage = datasets[language];
 
+	const [flashcards, setFlashcards] = useState(selectedLanguage);
+
 	// Shuffle order of cards-- maybe in a seperate component & reset to default:
 
 	// Remove a card:
+	const removeCard = (cardId) => {
+		setFlashcards((previousCards) => {
+			const updatedCards = previousCards.filter((card) => card.id !== cardId);
+			return updatedCards;
+		});
+	};
 
 	return (
 		<main>
 			<h2 className="page-heading">Flashcards</h2>
 			<ActivityNav />
 			<div className="flashcard-container">
-				{selectedLanguage.map((letter) => {
-					return <FlashCard {...letter} key={letter.id} />;
+				{flashcards.map((letter) => {
+					return (
+						<FlashCard {...letter} key={letter.id} removeCard={removeCard} />
+					);
 				})}
 			</div>
 		</main>

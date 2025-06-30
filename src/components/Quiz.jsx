@@ -106,6 +106,7 @@ const Quiz = () => {
 					/>
 				)}
 
+        {/* STYLE: */}
 				{quizFinished ? (
 					<div>
 						<p>
@@ -113,6 +114,7 @@ const Quiz = () => {
 						</p>
 						<button onClick={() => window.location.reload()}>Try Again</button>
 					</div>
+
 				) : (
 					<form onSubmit={handleSubmit}>
 						<div className="answer-container">
