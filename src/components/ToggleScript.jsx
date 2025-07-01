@@ -1,7 +1,11 @@
 import { useGlobalContext } from "../context";
 
+{
+	/* Move to Navbar eventually and group with Dark/Light mode toggle */
+}
+
 const ToggleScript = () => {
-  const { fontType, toggleFont } = useGlobalContext();
+	const { fontType, toggleFont } = useGlobalContext();
 
 	return (
 		<div className="form-check form-switch">
@@ -10,7 +14,7 @@ const ToggleScript = () => {
 				type="checkbox"
 				role="switch"
 				id="switchCheckDefault"
-        checked={!fontType}
+				checked={!fontType}
 				// value={fontType}
 				onChange={toggleFont}
 			/>

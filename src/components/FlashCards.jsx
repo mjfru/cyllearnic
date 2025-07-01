@@ -31,6 +31,9 @@ const FlashCards = () => {
 		<main>
 			<h2 className="page-heading">Flashcards</h2>
 			<ActivityNav />
+			<aside className="instructions">
+				Hover a card to reveal details, double click to delete from the deck.
+			</aside>
 			<div className="flashcard-container">
 				{flashcards.map((letter) => {
 					return (

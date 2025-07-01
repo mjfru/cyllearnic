@@ -1,7 +1,7 @@
 Cyllearnic - Planning & Achitecture
 
 Requirements for MVP:
-  - Clean, universal interface with a theme, consistent typography, and sizing -- IN PROGRESS
+  - Clean, universal interface with a theme, consistent typography, and sizing -- IN PROCESS
   - At least two alphabet options (i.e. Ukrainian, Russian) -- DONE
   - A language 'homepage', where all letters are in their own component with the letter itself, English-equivalent pronunciation, and an example word. -- DONE
   - An extension of this page that allows users to use each component as a flashcard, displaying only cyrillic on one side and the English-equivalent on the other. -- DONE
@@ -23,7 +23,7 @@ Components:
   
   - Flashcard Page -- DONE
       - Rotatable Cards -- DONE
-      - Ability to remove a card if user feels the letter has been mastered -- IN PROCESS - NEEDS STYLING / TROUBLESHOOTING
+      - Ability to remove a card if user feels the letter has been mastered -- DONE
     
     - Quiz Page
       - Text Inputs to Compare -- DONE
@@ -36,12 +36,12 @@ Components:
 
 Stretch Goals:
   - Bonus section for obsolete / historical letters (Russian especially)
-  - Apply cursive styles to examples as well when toggled
+  - Apply cursive styles to examples when toggled
   - Highlight the studied letter in the example word
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
   - Toggle option for text style (typed vs. a hand-written font) -- DONE
-  - Dark mode
+  - Dark mode (place in header, after dropdown, and grouped with the cursive toggle)
   - Shuffle button for flashcard page
   - Live score tracker for quizzes
   - A right/wrong bank for live feedback during quizzes

@@ -93,3 +93,15 @@ input[type="checkbox"] {
 	margin: 1rem;
 	justify-items: center;
 }
+
+.flashcard-container {
+  gap: 2rem;
+}
+
+.instructions {
+  text-align: center;
+  color: var(--primary-text);
+  font-weight: lighter;
+  text-decoration: underline;
+  letter-spacing: 1.15px;
+}

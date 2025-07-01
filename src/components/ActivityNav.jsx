@@ -19,6 +19,7 @@ const ActivityNav = () => {
 				</Link>
 			</div>
 			<div className="toggle-container">
+        {/* Move to Navbar eventually and group with Dark/Light mode toggle */}
 				<ToggleScript />
 			</div>
 		</>
