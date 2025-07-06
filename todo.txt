@@ -27,7 +27,7 @@ Components:
     
     - Quiz Page
       - Text Inputs to Compare -- DONE
-      - Statistics -- IN PROCESS...
+      - Statistics -- TO DO NEXT
 
     - Footer -- DONE
       - Made By... & Date -- DONE
@@ -35,15 +35,15 @@ Components:
       "This project is focused on helping users learn and appreciate the diversity of Cyrillic alphabets. We aim to approach all languages with respect and neutrality." -- DONE
 
 Stretch Goals:
+  - Toggle option for text style (typed vs. a hand-written font) -- DONE
+  - Shuffle button for flashcard page -- TO DO NEXT
+  - Live score tracker for quizzes -- TO DO NEXT
   - Bonus section for obsolete / historical letters (Russian especially)
   - Apply cursive styles to examples when toggled
   - Highlight the studied letter in the example word
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
-  - Toggle option for text style (typed vs. a hand-written font) -- DONE
   - Dark mode (place in header, after dropdown, and grouped with the cursive toggle)
-  - Shuffle button for flashcard page
-  - Live score tracker for quizzes
   - A right/wrong bank for live feedback during quizzes
   - Quiz mode options: 5/10/All(default) letters
   - Custom color schemes for each language

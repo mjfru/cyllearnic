@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { shuffle,  getPercentage } from "../utils";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
@@ -10,12 +11,6 @@ import QuizCard from "./QuizCard";
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
-};
-
-//* Helper function to shuffle the language arrays:
-const shuffle = (array) => {
-	//* Randomize the order of the array elements in a new, copied array:
-	return [...array].sort(() => Math.random() - 0.5);
 };
 
 const Quiz = () => {
@@ -54,12 +49,16 @@ const Quiz = () => {
 		({ letterUpper, letterLower } = currentLetter);
 	}
 
+  const finalPercentage = getPercentage(score, quizLetters.length);
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		//* If there's no letter to be displayed, don't do anything:
+		
+    //* If there's no letter to be displayed, don't do anything:
 		if (!currentLetter || hasAnswered) return;
 		setHasAnswered(true);
-		//* Checking correct or incorrect entries and making them uniform:
+		
+    //* Checking correct or incorrect entries and making them uniform:
 		const correctAnswer = currentLetter.pronunciation.toLowerCase().trim();
 		const userInput = userAnswer.toLowerCase().trim();
 
@@ -106,15 +105,16 @@ const Quiz = () => {
 					/>
 				)}
 
-        {/* STYLE: */}
+        {/* //! Style similar to button below, center */}
 				{quizFinished ? (
 					<div>
 						<p>
-							Your score: {score}/{quizLetters.length}
+							Your score: {score}/{quizLetters.length} ({finalPercentage}%)
 						</p>
 						<button onClick={() => window.location.reload()}>Try Again</button>
 					</div>
 
+        // ! Make this disappear at the end of the quiz, only showing the results 
 				) : (
 					<form onSubmit={handleSubmit}>
 						<div className="answer-container">
@@ -136,23 +136,9 @@ const Quiz = () => {
 					</form>
 				)}
 			</div>
+      {!quizFinished && <p>Answers Correct: {score} / {quizLetters.length}</p>}
 		</main>
 	);
 };
 
 export default Quiz;
-
-// const quizFive = [];
-// const quizTen = [];
-// const quizAll = [];
-
-{
-	/* <div className="quiz-select">
-					<label htmlFor="">Quiz All Letters:</label>
-					<input type="radio" name="quizSelect" id="" defaultChecked />
-					<label htmlFor="">Quiz 10 Random Letters:</label>
-					<input type="radio" name="quizSelect" id="" />
-					<label htmlFor="">Quiz 5 Random Letters:</label>
-					<input type="radio" name="quizSelect" id="" />
-				</div> */
-}
