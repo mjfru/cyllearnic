@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { shuffle,  getPercentage } from "../utils";
+import { shuffle, getPercentage } from "../utils";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
 import ActivityNav from "./ActivityNav";
 import QuizCard from "./QuizCard";
+import QuizTracker from "./QuizTracker";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -49,16 +50,16 @@ const Quiz = () => {
 		({ letterUpper, letterLower } = currentLetter);
 	}
 
-  const finalPercentage = getPercentage(score, quizLetters.length);
+	const finalPercentage = getPercentage(score, quizLetters.length);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		
-    //* If there's no letter to be displayed, don't do anything:
+
+		//* If there's no letter to be displayed, don't do anything:
 		if (!currentLetter || hasAnswered) return;
 		setHasAnswered(true);
-		
-    //* Checking correct or incorrect entries and making them uniform:
+
+		//* Checking correct or incorrect entries and making them uniform:
 		const correctAnswer = currentLetter.pronunciation.toLowerCase().trim();
 		const userInput = userAnswer.toLowerCase().trim();
 
@@ -105,7 +106,7 @@ const Quiz = () => {
 					/>
 				)}
 
-        {/* //! Style similar to button below, center */}
+				{/* //! Style similar to button below, center */}
 				{quizFinished ? (
 					<div>
 						<p>
@@ -113,14 +114,13 @@ const Quiz = () => {
 						</p>
 						<button onClick={() => window.location.reload()}>Try Again</button>
 					</div>
-
-        // ! Make this disappear at the end of the quiz, only showing the results 
 				) : (
+					// ! Make this disappear at the end of the quiz, only showing the results
 					<form onSubmit={handleSubmit}>
 						<div className="answer-container">
 							<input
 								type="text"
-                className="form-control"
+								className="form-control"
 								value={userAnswer}
 								onChange={handleChange}
 								placeholder="What's this letter in English?"
@@ -136,7 +136,7 @@ const Quiz = () => {
 					</form>
 				)}
 			</div>
-      {!quizFinished && <p>Answers Correct: {score} / {quizLetters.length}</p>}
+			{!quizFinished && <QuizTracker score={score} quizLetters={quizLetters} />}
 		</main>
 	);
 };

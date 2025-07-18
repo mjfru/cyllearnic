@@ -1,5 +1,5 @@
 .reg-card {
-	padding: 20px;
+	padding: 25px;
 	border: var(--card-border);
 }
 
@@ -14,13 +14,14 @@
 .cyrillic {
 	font-family: var(--cyrillic-font);
 	font-size: var(--card-letter-size);
-	margin-bottom: 1.5rem;
+	/* margin-bottom: 1.5rem; */
 }
 
 .cursive {
 	font-family: var(--cyrillic-cursive);
 	font-weight: bold;
-	margin-bottom: 0;
+  /* margin-top: 1rem; */
+	/* margin-bottom: 1.5rem; */
 }
 
 .letter-line {
