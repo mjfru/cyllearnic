@@ -95,9 +95,8 @@ const Quiz = () => {
 			<h2 className="page-heading">{language} Quiz</h2>
 			<ActivityNav />
 			<div className="quiz-container">
-				{quizLetters.length === 0 ? (
-					<p>Loading Quiz...</p>
-				) : (
+				{quizLetters.length === 0 && <p>Loading Quiz...</p>}
+				{!quizFinished && (
 					<QuizCard
 						letterUpper={letterUpper}
 						letterLower={letterLower}
@@ -106,10 +105,11 @@ const Quiz = () => {
 				)}
 
 				{/* //! Style similar to button below, center */}
-				{quizFinished ? (
+				{quizFinished && (
 					<QuizResults score={score} quizLetters={quizLetters} />
-				) : (
-					// ! Make this disappear at the end of the quiz, only showing the results
+				)}
+				{/* // ! Make this disappear at the end of the quiz */}
+				{!quizFinished && (
 					<form onSubmit={handleSubmit}>
 						<div className="answer-container">
 							<input
