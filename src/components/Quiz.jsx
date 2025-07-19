@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { shuffle, getPercentage } from "../utils";
+import { shuffle } from "../utils";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
 import ActivityNav from "./ActivityNav";
 import QuizCard from "./QuizCard";
 import QuizTracker from "./QuizTracker";
+import QuizResults from "./QuizResults";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -49,8 +50,6 @@ const Quiz = () => {
 	if (currentLetter) {
 		({ letterUpper, letterLower } = currentLetter);
 	}
-
-	const finalPercentage = getPercentage(score, quizLetters.length);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -108,12 +107,7 @@ const Quiz = () => {
 
 				{/* //! Style similar to button below, center */}
 				{quizFinished ? (
-					<div>
-						<p>
-							Your score: {score}/{quizLetters.length} ({finalPercentage}%)
-						</p>
-						<button onClick={() => window.location.reload()}>Try Again</button>
-					</div>
+					<QuizResults score={score} quizLetters={quizLetters} />
 				) : (
 					// ! Make this disappear at the end of the quiz, only showing the results
 					<form onSubmit={handleSubmit}>

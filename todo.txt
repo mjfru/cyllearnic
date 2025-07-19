@@ -49,3 +49,4 @@ Stretch Goals:
   - Custom color schemes for each language
   - Indicate which activity is active by switching Bootstrap buttons (solid / outlined)
   - Add an special border or feature if there is something unique about the letter in relation to the language. (E.G. this letter only exists in Serbian)
+  - Make a transition for the print <--> cursive change
