@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { shuffle } from "../utils";
+import { getPercentage, shuffle } from "../utils";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
@@ -130,7 +130,13 @@ const Quiz = () => {
 					</form>
 				)}
 			</div>
-			{!quizFinished && <QuizTracker score={score} quizLetters={quizLetters} />}
+			{!quizFinished && (
+				<QuizTracker
+					// score={score}
+					quizLetters={quizLetters.length}
+					currentIndex={currentIndex}
+				/>
+			)}
 		</main>
 	);
 };

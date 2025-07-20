@@ -1,8 +1,11 @@
-const QuizTracker = ({ score, quizLetters }) => {
+import { getPercentage } from "../utils";
+
+const QuizTracker = ({ quizLetters, currentIndex }) => {
+  // const percentCorrect = getPercentage(score, length)
 	return (
 		<div>
 			<p>
-				Answers Correct: {score} / {quizLetters.length}
+				Progress: {currentIndex} / {quizLetters}
 			</p>
 		</div>
 	);
