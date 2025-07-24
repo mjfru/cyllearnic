@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { getPercentage, shuffle } from "../utils";
+import { shuffle } from "../utils";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 
@@ -92,8 +92,8 @@ const Quiz = () => {
 
 	return (
 		<main>
-			<h2 className="page-heading">{language} Quiz</h2>
 			<ActivityNav />
+			<h2 className="page-heading">{language} Quiz</h2>
 			<div className="quiz-container">
 				{quizLetters.length === 0 && <p>Loading Quiz...</p>}
 				{!quizFinished && (
@@ -108,7 +108,7 @@ const Quiz = () => {
 				{quizFinished && (
 					<QuizResults score={score} quizLetters={quizLetters} />
 				)}
-				{/* // ! Make this disappear at the end of the quiz */}
+
 				{!quizFinished && (
 					<form onSubmit={handleSubmit}>
 						<div className="answer-container">
@@ -132,7 +132,6 @@ const Quiz = () => {
 			</div>
 			{!quizFinished && (
 				<QuizTracker
-					// score={score}
 					quizLetters={quizLetters.length}
 					currentIndex={currentIndex}
 				/>

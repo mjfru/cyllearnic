@@ -94,6 +94,32 @@ input[type="checkbox"] {
 	justify-items: center;
 }
 
+.flashcard-bar-container {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.flashcard-unique {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.flashcard-unique aside {
+  text-align: center;
+  z-index: 1;
+}
+
+.flashcard-unique .flashcard-buttons {
+  position: absolute;
+  right: 2.25rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
 .flashcard-container {
   gap: 2rem;
 }

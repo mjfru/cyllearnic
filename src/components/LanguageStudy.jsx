@@ -18,11 +18,11 @@ const LanguageStudy = () => {
 
 	return (
 		<main>
+			<ActivityNav />
 			<h2 className="page-heading">Study {language} Cyrillic</h2>
 			{/* Placeholder examples for conditional rendering later... */}
 			{/* {language === "russian" && <p>Russian!</p>}
 			{language === "ukrainian" && <p>Ukrainian!</p>} */}
-			<ActivityNav />
 			<div className="study-container">
 				{selectedLanguage.map((letter) => {
 					return <LetterCard {...letter} key={letter.id} />;
