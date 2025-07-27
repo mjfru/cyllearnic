@@ -27,3 +27,12 @@
   opacity: .25;
 	cursor: not-allowed;
 }
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 25vh;
+  min-width: 30vw;
+  align-items: center;
+  justify-content: center;
+}

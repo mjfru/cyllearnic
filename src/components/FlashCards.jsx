@@ -26,6 +26,11 @@ const FlashCards = () => {
 	const [flashcards, setFlashcards] = useState(selectedLanguage);
 
 	// Shuffle order of cards-- maybe in a seperate component & reset to default:
+  
+  // Reset default cards & order:
+  const handleReset = () => {
+    return window.location.reload();
+  };
 
 	// Remove a card:
 	const removeCard = (cardId) => {
@@ -33,10 +38,6 @@ const FlashCards = () => {
 			const updatedCards = previousCards.filter((card) => card.id !== cardId);
 			return updatedCards;
 		});
-	};
-
-	const handleReset = () => {
-		return window.location.reload();
 	};
 
 	return (
