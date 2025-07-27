@@ -11,9 +11,8 @@ import ActivityNav from "./ActivityNav";
 import FlashCard from "./FlashCard";
 
 // Other
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShuffle, faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShuffle, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -36,25 +35,34 @@ const FlashCards = () => {
 		});
 	};
 
+	const handleReset = () => {
+		return window.location.reload();
+	};
+
 	return (
 		<main>
 			<ActivityNav />
 			<h2 className="page-heading">Flashcards</h2>
-			
-      <div className="flashcard-bar-container">
-      <div className="flashcard-unique">
-				<aside className="instructions">
-					Hover a card to reveal details, double click to delete from the deck.
-				</aside>
-				<div className="flashcard-buttons">
-					<button className="btn btn-sm btn-primary">Shuffle <FontAwesomeIcon icon={faShuffle}/></button>
-					<button className="btn btn-sm btn-primary">Reset <FontAwesomeIcon icon={faArrowsRotate}/></button>
+
+			<div className="flashcard-bar-container">
+				<div className="flashcard-unique">
+					<aside className="instructions">
+						Hover a card to reveal details, double click to delete from the
+						deck.
+					</aside>
+					<div className="flashcard-buttons">
+						<button className="btn btn-sm btn-primary">
+							Shuffle <FontAwesomeIcon icon={faShuffle} />
+						</button>
+						<button className="btn btn-sm btn-primary">
+							Reset{" "}
+							<FontAwesomeIcon icon={faArrowsRotate} onClick={handleReset} />
+						</button>
+					</div>
 				</div>
 			</div>
 
-      </div>
-			
-      <div className="flashcard-container">
+			<div className="flashcard-container">
 				{flashcards.map((letter) => {
 					return (
 						<FlashCard {...letter} key={letter.id} removeCard={removeCard} />
