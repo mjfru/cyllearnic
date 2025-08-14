@@ -23,14 +23,18 @@ const FlashCards = () => {
 	const { language } = useParams();
 	const selectedLanguage = datasets[language];
 
+	// What the UI actively uses:
 	const [flashcards, setFlashcards] = useState(selectedLanguage);
 
+	// The "reset" pack to ensure the order of cards when hitting the reset button:
+	const [defaultCards] = useState(selectedLanguage);
+
 	// Shuffle order of cards-- maybe in a seperate component & reset to default:
-  
-  // Reset default cards & order:
-  const handleReset = () => {
-    return window.location.reload();
-  };
+
+	// Reset default cards & order:
+	const handleReset = () => {
+		setFlashcards(defaultCards);
+	};
 
 	// Remove a card:
 	const removeCard = (cardId) => {
@@ -55,9 +59,8 @@ const FlashCards = () => {
 						<button className="btn btn-sm btn-primary">
 							Shuffle <FontAwesomeIcon icon={faShuffle} />
 						</button>
-						<button className="btn btn-sm btn-primary">
-							Reset{" "}
-							<FontAwesomeIcon icon={faArrowsRotate} onClick={handleReset} />
+						<button className="btn btn-sm btn-primary" onClick={handleReset}>
+							Reset <FontAwesomeIcon icon={faArrowsRotate} />
 						</button>
 					</div>
 				</div>
