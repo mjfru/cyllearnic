@@ -13,6 +13,7 @@ import FlashCard from "./FlashCard";
 // Other
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShuffle, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+import { shuffle } from "../utils";
 
 const datasets = {
 	russian: russianCyrillic,
@@ -30,6 +31,10 @@ const FlashCards = () => {
 	const [defaultCards] = useState(selectedLanguage);
 
 	// Shuffle order of cards-- maybe in a seperate component & reset to default:
+	const handleShuffle = () => {
+		const shuffledCards = shuffle(flashcards);
+		setFlashcards(shuffledCards);
+	};
 
 	// Reset default cards & order:
 	const handleReset = () => {
@@ -56,7 +61,7 @@ const FlashCards = () => {
 						deck.
 					</aside>
 					<div className="flashcard-buttons">
-						<button className="btn btn-sm btn-primary">
+						<button className="btn btn-sm btn-primary" onClick={handleShuffle}>
 							Shuffle <FontAwesomeIcon icon={faShuffle} />
 						</button>
 						<button className="btn btn-sm btn-primary" onClick={handleReset}>
