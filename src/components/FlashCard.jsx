@@ -1,12 +1,23 @@
+import { useState } from "react";
 import { useGlobalContext } from "../context";
 
 const FlashCard = ({ removeCard, ...letter }) => {
 	const { letterUpper, letterLower, pronunciation, example, meaning, id } =
 		letter;
+	const [isFlipped, setIsFlipped] = useState(false);
 	const { fontType } = useGlobalContext();
+
+	const handleClick = () => {
+		setIsFlipped(!isFlipped);
+	};
+
 	return (
 		<>
-			<div className="flash-card" onDoubleClick={() => removeCard(id)}>
+			<div
+				className={`flash-card ${isFlipped ? "flipped" : ""}`}
+				onClick={handleClick}
+				onDoubleClick={() => removeCard(id)}
+			>
 				<div className="flash-card-inner">
 					<div className="card-side card-front">
 						<h4
@@ -31,7 +42,7 @@ const FlashCard = ({ removeCard, ...letter }) => {
 						</div>
 					</div>
 				</div>
-        {/* Fix this so it doesn't rotate on hover, resize/use an icon, distill into a component */}
+				{/* Fix this so it doesn't rotate on hover, resize/use an icon, distill into a component */}
 				{/* <button onClick={() => removeCard(id)}>X</button> */}
 			</div>
 		</>

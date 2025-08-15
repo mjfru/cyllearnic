@@ -36,3 +36,40 @@
   align-items: center;
   justify-content: center;
 }
+
+.quiz-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 2rem;
+}
+
+.quiz-card {
+	min-width: 25%;
+	height: 30vh;
+	margin: 2rem 2rem 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	transition: border-color 0.3s ease, background-color 0.3s ease,
+		opacity 0.3s ease;
+}
+
+.quiz-card .quiz-letter {
+	font-size: 6rem;
+}
+
+.quiz-correct {
+	border-color: var(--highlight-bright);
+  color: #fff;
+	background-color: #a6ce9d;
+}
+
+.quiz-incorrect {
+	border-color: var(--highlight-bright);
+  background-color: var(--highlight-dark);
+  color: #fff;
+}

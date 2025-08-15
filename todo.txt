@@ -37,8 +37,8 @@ Components:
 
 Stretch Goals:
   - Toggle option for text style (typed vs. a hand-written font) -- DONE
-  - Shuffle button for flashcard page -- TO DO NEXT
-  - Live score tracker for quizzes -- TO DO NEXT
+  - Shuffle button for flashcard page -- DONE
+  - Live score tracker for quizzes -- DONE
   - Bonus section for obsolete / historical letters (Russian especially)
   - Apply cursive styles to examples when toggled
   - Highlight the studied letter in the example word
@@ -50,4 +50,3 @@ Stretch Goals:
   - Custom color schemes for each language
   - Indicate which activity is active by switching Bootstrap buttons (solid / outlined)
   - Add an special border or feature if there is something unique about the letter in relation to the language. (E.G. this letter only exists in Serbian)
-  - Make a transition for the print <--> cursive change
