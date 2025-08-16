@@ -24,7 +24,7 @@ Components:
   - Flashcard Page -- DONE
       - Rotatable Cards -- DONE
       - Ability to remove a card if user feels the letter has been mastered -- DONE
-      - Use single click instead of hover to rotate cards
+      - Use single click instead of hover to rotate cards -- DONE
     
     - Quiz Page
       - Text Inputs to Compare -- DONE

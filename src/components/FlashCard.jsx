@@ -42,7 +42,6 @@ const FlashCard = ({ removeCard, ...letter }) => {
 						</div>
 					</div>
 				</div>
-				{/* Fix this so it doesn't rotate on hover, resize/use an icon, distill into a component */}
 				{/* <button onClick={() => removeCard(id)}>X</button> */}
 			</div>
 		</>

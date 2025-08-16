@@ -57,7 +57,7 @@ const FlashCards = () => {
 			<div className="flashcard-bar-container">
 				<div className="flashcard-unique">
 					<aside className="instructions">
-						Hover a card to reveal details, double click to delete from the
+						Click once on a card to reveal details, double click to delete from the
 						deck.
 					</aside>
 					<div className="flashcard-buttons">
