@@ -43,7 +43,7 @@ Stretch Goals:
   - Apply cursive styles to examples when toggled
   - Highlight the studied letter in the example word
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
-    - Serbo-Croatian (South Slavic), Bulgarian, Mongolian
+    - Serbo-Croatian (South Slavic) -- DONE, Bulgarian, Mongolian
   - Dark mode (place in header, after dropdown, and grouped with the cursive toggle)
   - A right/wrong bank for live feedback during quizzes
   - Quiz mode options: 5/10/All(default) letters

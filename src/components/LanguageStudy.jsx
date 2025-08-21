@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
+import { serbianCyrillic } from "../data/sb_cyrillic";
 import LetterCard from "./LetterCard";
 import ActivityNav from "./ActivityNav";
 
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
+	serbian: serbianCyrillic,
 };
 
 const LanguageStudy = () => {

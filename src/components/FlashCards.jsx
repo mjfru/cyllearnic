@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 // Data
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
+import { serbianCyrillic } from "../data/sb_cyrillic";
 
 // Components
 import ActivityNav from "./ActivityNav";
@@ -18,6 +19,7 @@ import { shuffle } from "../utils";
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
+	serbian: serbianCyrillic,
 };
 
 const FlashCards = () => {
@@ -57,8 +59,8 @@ const FlashCards = () => {
 			<div className="flashcard-bar-container">
 				<div className="flashcard-unique">
 					<aside className="instructions">
-						Click once on a card to reveal details, double click to delete from the
-						deck.
+						Click once on a card to reveal details, double click to delete from
+						the deck.
 					</aside>
 					<div className="flashcard-buttons">
 						<button className="btn btn-sm btn-primary" onClick={handleShuffle}>

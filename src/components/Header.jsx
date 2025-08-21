@@ -42,6 +42,9 @@ const Header = () => {
 						<option value="ukrainian" className="language-option">
 							Ukrainian
 						</option>
+						<option value="serbian" className="language-option">
+							Serbian
+						</option>
 					</select>
 				</div>
 			</nav>
