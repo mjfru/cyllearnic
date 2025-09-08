@@ -18,7 +18,7 @@ Components:
     - Title / Subtitle Content -- DONE
     - Button(s) for each available language, with English and native spelling -- DONE
 
-  - Language homepage -- DONE
+  - Language Homepage -- DONE
     - Letter Cards - Cyrillic Letter, Pronunciation, Example Word -- DONE
   
   - Flashcard Page -- DONE
@@ -26,7 +26,7 @@ Components:
       - Ability to remove a card if user feels the letter has been mastered -- DONE
       - Use single click instead of hover to rotate cards -- DONE
     
-    - Quiz Page
+  - Quiz Page
       - Text Inputs to Compare -- DONE
       - Statistics -- DONE
 
@@ -36,17 +36,31 @@ Components:
       "This project is focused on helping users learn and appreciate the diversity of Cyrillic alphabets. We aim to approach all languages with respect and neutrality." -- DONE
 
 Stretch Goals:
+  UI:
   - Toggle option for text style (typed vs. a hand-written font) -- DONE
   - Shuffle button for flashcard page -- DONE
   - Live score tracker for quizzes -- DONE
-  - Bonus section for obsolete / historical letters (Russian especially)
-  - Apply cursive styles to examples when toggled
-  - Highlight the studied letter in the example word
-  - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
-    - Serbo-Croatian (South Slavic) -- DONE, Bulgarian, Mongolian
   - Dark mode (place in header, after dropdown, and grouped with the cursive toggle)
-  - A right/wrong bank for live feedback during quizzes
-  - Quiz mode options: 5/10/All(default) letters
-  - Custom color schemes for each language
   - Indicate which activity is active by switching Bootstrap buttons (solid / outlined)
   - Add an special border or feature if there is something unique about the letter in relation to the language. (E.G. this letter only exists in Serbian)
+  - Apply cursive styles to examples when toggled
+  - Highlight the studied letter in the example word
+  - Responsive Design
+  - Advanced Stretch Goal: Utilize libraries / AI to a button to enable text-to-speech so users can hear the letter being natively pronounced.
+  
+  QUIZZES:
+  - A right/wrong bank for live feedback during quizzes
+  - A progress bar for quizzes
+  - Quiz mode options: Random selection of 5/10/All(default) letters
+  - Create a Quiz page where the user chooses their type of quiz
+    - Add an English transliteration to Cyrillic quiz option, with links to demonstrate how to install cyrillic IDE
+    - Super, super stretch goal - Add a speech recognition quiz where a user can speak into their microphone to match the displayed letter.
+      - Also do the opposite, the pronunciation is played via audio clip and the student types the correct letter into the field.
+
+  CONTENT:
+  - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
+    - Serbian -- DONE
+    - Bulgarian
+    - Mongolian
+  - Bonus section for obsolete / historical letters (Russian especially)
+  - Include stretch goals and updates in the 'About' page
