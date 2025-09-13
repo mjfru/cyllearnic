@@ -28,7 +28,7 @@ const Header = () => {
 				</Link>
 
 				<div className="language-nav-container language-link">
-					<label htmlFor="language-select">Switch Language: </label>
+					<label htmlFor="language-select">Learn: </label>
 					<select
 						onChange={handleChange}
 						className="form-select form-select-sm language-option"

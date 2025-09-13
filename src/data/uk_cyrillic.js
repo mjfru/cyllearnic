@@ -45,7 +45,7 @@ export const ukrainianCyrillic = [
 		letterLower: "д",
 		pronunciation: "D",
 		example: "Дніпро",
-		meaning: "Dnipro (city & river)",
+		meaning: "Dnipro",
 	},
 	{
 		id: "uk07",
@@ -157,7 +157,7 @@ export const ukrainianCyrillic = [
 		letterLower: "п",
 		pronunciation: "P",
 		example: "Писанка",
-		meaning: "Traditional Easter Eggs",
+		meaning: "Pysanky Eggs",
 	},
 	{
 		id: "uk21",
@@ -220,8 +220,8 @@ export const ukrainianCyrillic = [
 		letterUpper: "Ч",
 		letterLower: "ч",
 		pronunciation: "Ch",
-		example: "Чорнобиль",
-		meaning: "Chernobyl (city)",
+		example: "Червоний",
+		meaning: "Red",
 	},
 	{
 		id: "uk29",

@@ -29,15 +29,15 @@ export const russianCyrillic = [
 		letterLower: "г",
 		pronunciation: "G",
 		example: "Гагарин",
-		meaning: "Gagarin (Astronaut)",
+		meaning: "Gagarin",
 	},
 	{
 		id: "ru05",
 		letterUpper: "Д",
 		letterLower: "д",
 		pronunciation: "D",
-		example: "Достоевский",
-		meaning: "Dostoevsky (Author)",
+		example: "Дом",
+		meaning: "House",
 	},
 	{
 		id: "ru06",
@@ -101,7 +101,7 @@ export const russianCyrillic = [
 		letterLower: "л",
 		pronunciation: "L",
 		example: "Ленин",
-		meaning: "(Vladimir) Lenin",
+		meaning: "Lenin",
 	},
 	{
 		id: "ru14",
@@ -133,7 +133,7 @@ export const russianCyrillic = [
 		letterLower: "п",
 		pronunciation: "P",
 		example: "Пушкин",
-		meaning: "Pushkin (writer)",
+		meaning: "Pushkin",
 	},
 	{
 		id: "ru18",
@@ -157,7 +157,7 @@ export const russianCyrillic = [
 		letterLower: "т",
 		pronunciation: "T",
 		example: "Толстой",
-		meaning: "Tolstoy (author)",
+		meaning: "Tolstoy",
 	},
 	{
 		id: "ru21",
@@ -196,8 +196,8 @@ export const russianCyrillic = [
 		letterUpper: "Ч",
 		letterLower: "ч",
 		pronunciation: "Ch",
-		example: "Чайковский",
-		meaning: "Tchaikovsky (Composer)",
+		example: "Чек",
+		meaning: "Receipt",
 	},
 	{
 		id: "ru26",

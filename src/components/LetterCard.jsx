@@ -21,11 +21,10 @@ const LetterCard = ({
 					<span className="pronunciation">{pronunciation}</span>
 				</p>
 				<p>
-					<span className="letter-label">Example:</span> {example}
+					Example: <span className={fontType ? "cyrillic example-text" : "cyrillic larger-text cursive"}>{example}</span>
+					{/* Example: <span className="example-text">{example}</span> */}
 				</p>
-				<p>
-					<span className="letter-label">Meaning:</span> {meaning}
-				</p>
+				<p>Meaning: {meaning}</p>
 			</div>
 		</div>
 	);

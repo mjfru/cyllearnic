@@ -6,7 +6,7 @@
 .reg-card,
 .flash-card {
 	border-radius: var(--border-radius);
-	min-height: 27vh;
+	min-height: 28vh;
 	width: 12.5vw;
 	text-align: center;
 }
@@ -24,6 +24,11 @@
 	/* margin-bottom: 1.5rem; */
 }
 
+/* For cursive toggle on example usage */
+.larger-text {
+  font-size: 1.75rem;
+}
+
 .letter-line {
 	border-top: 2px solid var(--highlight-bright);
 	/*? Bootstrap makes <hr> tags lighter... */
@@ -31,13 +36,18 @@
 }
 
 .letter-details p {
-	margin: 0 auto;
+	margin: .25rem auto;
 }
 
 .pronunciation {
 	font-weight: bold;
-	font-size: 1.35rem;
+	font-size: 1.50rem;
 	color: var(--highlight-dark);
+}
+
+.example-text {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 /* Flash Cards */
