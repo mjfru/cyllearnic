@@ -6,6 +6,7 @@ export const russianCyrillic = [
 		pronunciation: "A",
 		example: "Анна",
 		meaning: "Anna (name)",
+    isUnique: false,
 	},
 	{
 		id: "ru02",
