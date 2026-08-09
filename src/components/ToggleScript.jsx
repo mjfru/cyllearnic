@@ -15,7 +15,6 @@ const ToggleScript = () => {
 				role="switch"
 				id="switchCheckDefault"
 				checked={!fontType}
-				// value={fontType}
 				onChange={toggleFont}
 			/>
 			<label className="form-check-label" htmlFor="switchCheckDefault">
