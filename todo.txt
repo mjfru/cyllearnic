@@ -65,5 +65,5 @@ Stretch Goals:
     - Serbian -- DONE
     - Bulgarian
     - Mongolian
-  - Bonus section for obsolete / historical letters (Russian especially)
+  - Bonus section for obsolete / historical letters (Russian especially) - Questionable, revisit or ask
   - Include stretch goals and updates in the 'About' page
