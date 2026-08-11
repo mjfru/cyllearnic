@@ -74,10 +74,6 @@
 	border-bottom-right-radius: var(--border-radius);
 }
 
-/* .flash-card:hover .flash-card-inner {
-	transform: rotateY(180deg);
-} */
-
 .flash-card.flipped .flash-card-inner {
 	transform: rotateY(180deg);
 }

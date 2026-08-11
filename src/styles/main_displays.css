@@ -71,7 +71,7 @@ input[type="checkbox"] {
 }
 
 .lang-nav-btn:hover {
-	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.55);
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .lang-nav-btn:active {
