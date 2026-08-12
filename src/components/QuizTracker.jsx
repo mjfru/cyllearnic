@@ -1,7 +1,7 @@
 const QuizTracker = ({ quizLetters, currentIndex }) => {
 	return (
-		<div>
-			<p>
+		<div className="quiz-tracker-container">
+			<p className="quiz-tracker-text">
 				Progress: {currentIndex} / {quizLetters}
 			</p>
 		</div>
