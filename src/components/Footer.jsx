@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<footer className="footer-container">
 			{/* REMOVE WHEN READY! */}
-			<p
+			{/* <p
 				style={{
 					color: "red",
 					backgroundColor: "black",
@@ -17,7 +17,7 @@ const Footer = () => {
 				This app is in active development and is approximately 60% finished.
 				Many features, styles, and functionality will be added, changed, or
 				removed. Currently compatible with larger screen sizes only.
-			</p>
+			</p> */}
 			<h3>Hand-coded and Maintained by MJF - {currentYear}</h3>
 			<div className="personal-link-container">
 				<a href="https://github.com/mjfru" target="_blank">
