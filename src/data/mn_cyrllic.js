@@ -7,4 +7,12 @@ export const mongolianCyrillic = [
 		example: "Ажил",
 		meaning: "Work",
 	},
+  {
+		id: "mn02",
+		letterUpper: "Б",
+		letterLower: "б",
+		pronunciation: "B",
+		example: "Баяр",
+		meaning: "Joy / celebration",
+	},
 ];
