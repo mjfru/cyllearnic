@@ -31,4 +31,20 @@ export const mongolianCyrillic = [
 		example: "Гэр",
 		meaning: "Ger (traditional dwelling)",
 	},
+	{
+		id: "mn05",
+		letterUpper: "Д",
+		letterLower: "д",
+		pronunciation: "D",
+		example: "Дэлгүүр",
+		meaning: "Store",
+	},
+	{
+		id: "mn06",
+		letterUpper: "Е",
+		letterLower: "е",
+		pronunciation: "Ye",
+		example: "Ерөнхийлөгч",
+		meaning: "President",
+	},
 ];
