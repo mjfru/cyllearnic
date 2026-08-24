@@ -47,4 +47,20 @@ export const mongolianCyrillic = [
 		example: "Ерөнхийлөгч",
 		meaning: "President",
 	},
+	{
+		id: "mn07",
+		letterUpper: "Ё",
+		letterLower: "ё",
+		pronunciation: "Yo",
+		example: "Ёроол",
+		meaning: "Bottom / base",
+	},
+	{
+		id: "mn08",
+		letterUpper: "Ж",
+		letterLower: "ж",
+		pronunciation: "J",
+		example: "Жил",
+		meaning: "Year",
+	},
 ];
