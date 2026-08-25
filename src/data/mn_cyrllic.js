@@ -63,4 +63,12 @@ export const mongolianCyrillic = [
 		example: "Жил",
 		meaning: "Year",
 	},
+	{
+		id: "mn09",
+		letterUpper: "З",
+		letterLower: "з",
+		pronunciation: "Z",
+		example: "Зам",
+		meaning: "Road",
+	},
 ];
