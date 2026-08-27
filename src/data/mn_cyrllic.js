@@ -87,4 +87,20 @@ export const mongolianCyrillic = [
 		example: "Йогурт",
 		meaning: "Yogurt (loanword)",
 	},
+	{
+		id: "mn12",
+		letterUpper: "К",
+		letterLower: "к",
+		pronunciation: "K",
+		example: "Компьютер",
+		meaning: "Computer (loanword)",
+	},
+	{
+		id: "mn13",
+		letterUpper: "Л",
+		letterLower: "л",
+		pronunciation: "L",
+		example: "Лам",
+		meaning: "Lama (monk)",
+	},
 ];
