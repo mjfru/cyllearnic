@@ -103,4 +103,12 @@ export const mongolianCyrillic = [
 		example: "Лам",
 		meaning: "Lama (monk)",
 	},
+	{
+		id: "mn14",
+		letterUpper: "М",
+		letterLower: "м",
+		pronunciation: "M",
+		example: "Морь",
+		meaning: "Horse",
+	},
 ];
