@@ -111,4 +111,20 @@ export const mongolianCyrillic = [
 		example: "Морь",
 		meaning: "Horse",
 	},
+	{
+		id: "mn15",
+		letterUpper: "Н",
+		letterLower: "н",
+		pronunciation: "N",
+		example: "Нар",
+		meaning: "Sun",
+	},
+	{
+		id: "mn16",
+		letterUpper: "О",
+		letterLower: "о",
+		pronunciation: "O",
+		example: "Ой",
+		meaning: "Forest",
+	},
 ];
