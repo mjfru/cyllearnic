@@ -135,4 +135,12 @@ export const mongolianCyrillic = [
 		example: "Ой",
 		meaning: "Forest",
 	},
+	{
+		id: "mn17",
+		letterUpper: "Ө",
+		letterLower: "ө",
+		pronunciation: "Ö",
+		example: "Өдөр",
+		meaning: "Day",
+	},
 ];
