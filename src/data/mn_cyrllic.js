@@ -143,4 +143,12 @@ export const mongolianCyrillic = [
 		example: "Өдөр",
 		meaning: "Day",
 	},
+	{
+		id: "mn18",
+		letterUpper: "П",
+		letterLower: "п",
+		pronunciation: "P",
+		example: "Пүрэв",
+		meaning: "Thursday",
+	},
 ];
