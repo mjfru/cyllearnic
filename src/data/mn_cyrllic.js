@@ -151,4 +151,12 @@ export const mongolianCyrillic = [
 		example: "Пүрэв",
 		meaning: "Thursday",
 	},
+	{
+		id: "mn19",
+		letterUpper: "Р",
+		letterLower: "р",
+		pronunciation: "R",
+		example: "Радио",
+		meaning: "Radio (loanword)",
+	},
 ];
