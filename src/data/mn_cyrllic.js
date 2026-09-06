@@ -159,4 +159,12 @@ export const mongolianCyrillic = [
 		example: "Радио",
 		meaning: "Radio (loanword)",
 	},
+	{
+		id: "mn20",
+		letterUpper: "С",
+		letterLower: "с",
+		pronunciation: "S",
+		example: "Сар",
+		meaning: "Moon / month",
+	},
 ];
