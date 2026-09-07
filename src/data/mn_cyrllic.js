@@ -167,4 +167,12 @@ export const mongolianCyrillic = [
 		example: "Сар",
 		meaning: "Moon / month",
 	},
+	{
+		id: "mn21",
+		letterUpper: "Т",
+		letterLower: "т",
+		pronunciation: "T",
+		example: "Тэнгэр",
+		meaning: "Sky",
+	},
 ];
