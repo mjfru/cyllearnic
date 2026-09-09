@@ -175,12 +175,20 @@ export const mongolianCyrillic = [
 		example: "Тэнгэр",
 		meaning: "Sky",
 	},
-  	{
+	{
 		id: "mn22",
 		letterUpper: "У",
 		letterLower: "у",
 		pronunciation: "U",
 		example: "Ус",
 		meaning: "Water",
+	},
+	{
+		id: "mn23",
+		letterUpper: "Ү",
+		letterLower: "ү",
+		pronunciation: "Ü",
+		example: "Үнэг",
+		meaning: "Fox",
 	},
 ];
