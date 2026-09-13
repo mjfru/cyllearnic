@@ -199,4 +199,12 @@ export const mongolianCyrillic = [
 		example: "Физик",
 		meaning: "Physics (loanword)",
 	},
+	{
+		id: "mn25",
+		letterUpper: "Х",
+		letterLower: "х",
+		pronunciation: "Kh",
+		example: "Хүн",
+		meaning: "Person",
+	},
 ];
