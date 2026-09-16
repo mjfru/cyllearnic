@@ -14,7 +14,7 @@
 }
 
 .btn-submit {
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	background-color: #0d6efd;
 	border-radius: 5px;
   border: transparent;
@@ -72,4 +72,9 @@
 	border-color: var(--highlight-bright);
   background-color: var(--highlight-dark);
   color: #fff;
+}
+
+.quiz-tracker-container {
+  text-align: center;
+
 }
