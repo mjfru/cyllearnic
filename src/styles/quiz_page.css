@@ -14,7 +14,7 @@
 }
 
 .btn-submit {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	background-color: #0d6efd;
 	border-radius: 5px;
   border: transparent;
@@ -76,5 +76,5 @@
 
 .quiz-tracker-container {
   text-align: center;
-
+  margin-top: 2rem;
 }
