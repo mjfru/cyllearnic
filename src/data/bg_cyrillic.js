@@ -7,4 +7,12 @@ export const bulgarianCyrillic = [
 		example: "Автобус",
 		meaning: "Bus",
 	},
+	{
+		id: "bg02",
+		letterUpper: "Б",
+		letterLower: "б",
+		pronunciation: "B",
+		example: "Баба",
+		meaning: "Grandmother",
+	},
 ];
