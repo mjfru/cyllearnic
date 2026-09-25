@@ -223,4 +223,20 @@ export const mongolianCyrillic = [
 		example: "Чоно",
 		meaning: "Wolf",
 	},
+	{
+		id: "mn28",
+		letterUpper: "Ш",
+		letterLower: "ш",
+		pronunciation: "Sh",
+		example: "Шар",
+		meaning: "Yellow",
+	},
+	{
+		id: "mn29",
+		letterUpper: "Щ",
+		letterLower: "щ",
+		pronunciation: "Shch",
+		example: "Щи",
+		meaning: "Shchi soup (loanword)",
+	},
 ];
