@@ -239,4 +239,20 @@ export const mongolianCyrillic = [
 		example: "Щи",
 		meaning: "Shchi soup (loanword)",
 	},
+	{
+		id: "mn30",
+		letterUpper: "Ъ",
+		letterLower: "ъ",
+		pronunciation: "Hard Sign",
+		example: "Объект",
+		meaning: "Object (loanword)",
+	},
+	{
+		id: "mn31",
+		letterUpper: "Ы",
+		letterLower: "ы",
+		pronunciation: "Hard Y",
+		example: "хызаалан",
+		meaning: "(rarely word-initial; shown mid-word)",
+	},
 ];
