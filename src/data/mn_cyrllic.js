@@ -245,14 +245,14 @@ export const mongolianCyrillic = [
 		letterLower: "ъ",
 		pronunciation: "Hard Sign",
 		example: "Объект",
-		meaning: "Object (loanword)",
+		meaning: "Object",
 	},
 	{
 		id: "mn31",
 		letterUpper: "Ы",
 		letterLower: "ы",
 		pronunciation: "Hard Y",
-		example: "хызаалан",
-		meaning: "(rarely word-initial; shown mid-word)",
+		example: "гарын",
+		meaning: "of the hand (genitive of гар)",
 	},
 ];
