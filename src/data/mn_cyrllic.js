@@ -255,4 +255,12 @@ export const mongolianCyrillic = [
 		example: "гарын",
 		meaning: "of the hand (genitive of гар)",
 	},
+	{
+		id: "mn32",
+		letterUpper: "Ь",
+		letterLower: "ь",
+		pronunciation: "Soft Sign",
+		example: "толь",
+		meaning: "Mirror / dictionary",
+	},
 ];
