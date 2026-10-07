@@ -31,4 +31,12 @@ export const bulgarianCyrillic = [
 		example: "Гора",
 		meaning: "Forest",
 	},
+	{
+		id: "bg05",
+		letterUpper: "Д",
+		letterLower: "д",
+		pronunciation: "D",
+		example: "Дом",
+		meaning: "Home / house",
+	},
 ];
