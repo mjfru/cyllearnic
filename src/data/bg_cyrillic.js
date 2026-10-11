@@ -71,4 +71,12 @@ export const bulgarianCyrillic = [
 		example: "Игра",
 		meaning: "Game",
 	},
+	{
+		id: "bg10",
+		letterUpper: "Й",
+		letterLower: "й",
+		pronunciation: "Y (short i)",
+		example: "Йогурт",
+		meaning: "Yogurt",
+	},
 ];
