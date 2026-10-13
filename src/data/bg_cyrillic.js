@@ -87,4 +87,12 @@ export const bulgarianCyrillic = [
 		example: "Книга",
 		meaning: "Book",
 	},
+	{
+		id: "bg12",
+		letterUpper: "Л",
+		letterLower: "л",
+		pronunciation: "L",
+		example: "Лято",
+		meaning: "Summer",
+	},
 ];
