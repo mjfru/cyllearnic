@@ -103,4 +103,12 @@ export const bulgarianCyrillic = [
 		example: "Море",
 		meaning: "Sea",
 	},
+	{
+		id: "bg14",
+		letterUpper: "Н",
+		letterLower: "н",
+		pronunciation: "N",
+		example: "Нож",
+		meaning: "Knife",
+	},
 ];
