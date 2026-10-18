@@ -119,12 +119,20 @@ export const bulgarianCyrillic = [
 		example: "Огън",
 		meaning: "Fire",
 	},
-  	{
+	{
 		id: "bg16",
 		letterUpper: "П",
 		letterLower: "п",
 		pronunciation: "P",
 		example: "Планина",
 		meaning: "Mountain",
+	},
+	{
+		id: "bg17",
+		letterUpper: "Р",
+		letterLower: "р",
+		pronunciation: "R",
+		example: "Река",
+		meaning: "River",
 	},
 ];
