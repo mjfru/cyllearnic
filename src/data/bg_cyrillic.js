@@ -135,4 +135,12 @@ export const bulgarianCyrillic = [
 		example: "Река",
 		meaning: "River",
 	},
+	{
+		id: "bg18",
+		letterUpper: "С",
+		letterLower: "с",
+		pronunciation: "S",
+		example: "Слънце",
+		meaning: "Sun",
+	},
 ];
