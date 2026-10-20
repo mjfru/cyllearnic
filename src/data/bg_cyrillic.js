@@ -143,4 +143,12 @@ export const bulgarianCyrillic = [
 		example: "Слънце",
 		meaning: "Sun",
 	},
+	{
+		id: "bg19",
+		letterUpper: "Т",
+		letterLower: "т",
+		pronunciation: "T",
+		example: "Трева",
+		meaning: "Grass",
+	},
 ];
