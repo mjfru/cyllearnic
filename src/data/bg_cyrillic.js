@@ -151,4 +151,12 @@ export const bulgarianCyrillic = [
 		example: "Трева",
 		meaning: "Grass",
 	},
+	{
+		id: "bg20",
+		letterUpper: "У",
+		letterLower: "у",
+		pronunciation: "U (oo)",
+		example: "Уста",
+		meaning: "Mouth",
+	},
 ];
