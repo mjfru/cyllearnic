@@ -159,12 +159,20 @@ export const bulgarianCyrillic = [
 		example: "Уста",
 		meaning: "Mouth",
 	},
-  	{
+	{
 		id: "bg21",
 		letterUpper: "Ф",
 		letterLower: "ф",
 		pronunciation: "F",
 		example: "Филм",
 		meaning: "Film",
+	},
+	{
+		id: "bg22",
+		letterUpper: "Х",
+		letterLower: "х",
+		pronunciation: "H (guttural)",
+		example: "Хляб",
+		meaning: "Bread",
 	},
 ];
