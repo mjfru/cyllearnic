@@ -175,4 +175,12 @@ export const bulgarianCyrillic = [
 		example: "Хляб",
 		meaning: "Bread",
 	},
+	{
+		id: "bg23",
+		letterUpper: "Ц",
+		letterLower: "ц",
+		pronunciation: "Ts",
+		example: "Цвете",
+		meaning: "Flower",
+	},
 ];
