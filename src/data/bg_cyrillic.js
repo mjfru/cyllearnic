@@ -191,4 +191,12 @@ export const bulgarianCyrillic = [
 		example: "Час",
 		meaning: "Hour / o'clock",
 	},
+	{
+		id: "bg25",
+		letterUpper: "Ш",
+		letterLower: "ш",
+		pronunciation: "Sh",
+		example: "Шапка",
+		meaning: "Hat",
+	},
 ];
