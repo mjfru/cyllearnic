@@ -199,4 +199,12 @@ export const bulgarianCyrillic = [
 		example: "Шапка",
 		meaning: "Hat",
 	},
+	{
+		id: "bg26",
+		letterUpper: "Щ",
+		letterLower: "щ",
+		pronunciation: "Sht",
+		example: "Щастие",
+		meaning: "Happiness",
+	},
 ];
