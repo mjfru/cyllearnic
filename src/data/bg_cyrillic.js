@@ -207,4 +207,12 @@ export const bulgarianCyrillic = [
 		example: "Щастие",
 		meaning: "Happiness",
 	},
+	{
+		id: "bg27",
+		letterUpper: "Ъ",
+		letterLower: "ъ",
+		pronunciation: "Uh (schwa)",
+		example: "Ъгъл",
+		meaning: "Corner / angle",
+	},
 ];
