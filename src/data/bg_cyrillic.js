@@ -223,4 +223,12 @@ export const bulgarianCyrillic = [
 		example: "Шофьор",
 		meaning: "Driver",
 	},
+	{
+		id: "bg29",
+		letterUpper: "Ю",
+		letterLower: "ю",
+		pronunciation: "Yu",
+		example: "Юг",
+		meaning: "South",
+	},
 ];
