@@ -231,4 +231,12 @@ export const bulgarianCyrillic = [
 		example: "Юг",
 		meaning: "South",
 	},
+	{
+		id: "bg30",
+		letterUpper: "Я",
+		letterLower: "я",
+		pronunciation: "Ya",
+		example: "Ябълка",
+		meaning: "Apple",
+	},
 ];
