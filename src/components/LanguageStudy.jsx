@@ -4,11 +4,13 @@ import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import { serbianCyrillic } from "../data/sb_cyrillic";
 import LetterCard from "./LetterCard";
 import ActivityNav from "./ActivityNav";
+import { bulgarianCyrillic } from "../data/bg_cyrillic";
 
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
 	serbian: serbianCyrillic,
+	bulgarian: bulgarianCyrillic,
 };
 
 const LanguageStudy = () => {

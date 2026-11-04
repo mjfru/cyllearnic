@@ -18,18 +18,14 @@ const Main = () => {
 					</button>
 				</Link>
 				<Link to="/study/serbian">
-					<button className="lang-nav-btn" >
-						Serbian
-					</button>
+					<button className="lang-nav-btn">Serbian</button>
 				</Link>
 				<Link to="/study/bulgarian">
-					<button className="lang-nav-btn" disabled>
-						Bulgarian (Coming Soon)
-					</button>
+					<button className="lang-nav-btn">Bulgarian</button>
 				</Link>
 				<Link to="/study/mongolian">
 					<button className="lang-nav-btn" disabled>
-						Mongolian (Coming Later)
+						Mongolian (Coming Soon)
 					</button>
 				</Link>
 			</nav>

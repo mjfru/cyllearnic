@@ -5,6 +5,7 @@ import { shuffle } from "../utils";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import { serbianCyrillic } from "../data/sb_cyrillic";
+import { bulgarianCyrillic } from "../data/bg_cyrillic";
 
 import ActivityNav from "./ActivityNav";
 import QuizCard from "./QuizCard";
@@ -15,6 +16,7 @@ const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
 	serbian: serbianCyrillic,
+	bulgarian: bulgarianCyrillic,
 };
 
 const Quiz = () => {

@@ -15,11 +15,13 @@ import FlashCard from "./FlashCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShuffle, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { shuffle } from "../utils";
+import { bulgarianCyrillic } from "../data/bg_cyrillic";
 
 const datasets = {
 	russian: russianCyrillic,
 	ukrainian: ukrainianCyrillic,
 	serbian: serbianCyrillic,
+	bulgarian: bulgarianCyrillic,
 };
 
 const FlashCards = () => {
