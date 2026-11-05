@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import { serbianCyrillic } from "../data/sb_cyrillic";
+import { bulgarianCyrillic } from "../data/bg_cyrillic";
 
 // Components
 import ActivityNav from "./ActivityNav";
@@ -15,7 +16,6 @@ import FlashCard from "./FlashCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShuffle, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { shuffle } from "../utils";
-import { bulgarianCyrillic } from "../data/bg_cyrillic";
 
 const datasets = {
 	russian: russianCyrillic,
