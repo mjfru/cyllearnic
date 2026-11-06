@@ -3,6 +3,7 @@ import { russianCyrillic } from "../data/ru_cyrillic";
 import { ukrainianCyrillic } from "../data/uk_cyrillic";
 import { serbianCyrillic } from "../data/sb_cyrillic";
 import { bulgarianCyrillic } from "../data/bg_cyrillic";
+import { mongolianCyrillic } from "../data/mn_cyrllic";
 import LetterCard from "./LetterCard";
 import ActivityNav from "./ActivityNav";
 
@@ -11,6 +12,7 @@ const datasets = {
 	ukrainian: ukrainianCyrillic,
 	serbian: serbianCyrillic,
 	bulgarian: bulgarianCyrillic,
+	mongolian: mongolianCyrillic,
 };
 
 const LanguageStudy = () => {
