@@ -24,9 +24,7 @@ const Main = () => {
 					<button className="lang-nav-btn">Bulgarian</button>
 				</Link>
 				<Link to="/study/mongolian">
-					<button className="lang-nav-btn" disabled>
-						Mongolian (Coming Soon)
-					</button>
+					<button className="lang-nav-btn">Mongolian</button>
 				</Link>
 			</nav>
 		</main>
