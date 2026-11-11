@@ -85,7 +85,7 @@ export const mongolianCyrillic = [
 		letterLower: "й",
 		pronunciation: "Short I",
 		example: "Йогурт",
-		meaning: "Yogurt (loanword)",
+		meaning: "Yogurt",
 	},
 	{
 		id: "mn12",
@@ -93,7 +93,7 @@ export const mongolianCyrillic = [
 		letterLower: "к",
 		pronunciation: "K",
 		example: "Компьютер",
-		meaning: "Computer (loanword)",
+		meaning: "Computer",
 	},
 	{
 		id: "mn13",
@@ -157,7 +157,7 @@ export const mongolianCyrillic = [
 		letterLower: "р",
 		pronunciation: "R",
 		example: "Радио",
-		meaning: "Radio (loanword)",
+		meaning: "Radio",
 	},
 	{
 		id: "mn20",
@@ -197,7 +197,7 @@ export const mongolianCyrillic = [
 		letterLower: "ф",
 		pronunciation: "F",
 		example: "Физик",
-		meaning: "Physics (loanword)",
+		meaning: "Physics",
 	},
 	{
 		id: "mn25",
@@ -237,7 +237,7 @@ export const mongolianCyrillic = [
 		letterLower: "щ",
 		pronunciation: "Shch",
 		example: "Щи",
-		meaning: "Shchi soup (loanword)",
+		meaning: "Shchi soup",
 	},
 	{
 		id: "mn30",
