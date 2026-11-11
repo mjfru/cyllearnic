@@ -7,13 +7,13 @@ const AboutPage = () => {
 			<div className="info-container">
 				<p>
 					Cyllearnic was created by a very small team of developers aiming to
-					build a unique, all-in-one Cyrllic learning tool.
+					build a unique, all-in-one Cyrillic learning tool.
 				</p>
 				<p>
 					The creators of this web application do not speak any of the offered
 					languages. We created it to aid our own learning and support others in
 					doing the same. We believe Cyllearnic provides learners with a fast
-					and accessible way to compare and contrast different Cyrllic alphabets
+					and accessible way to compare and contrast different Cyrillic alphabets
 					and discover which one suits them best.
 				</p>
 				<p>
