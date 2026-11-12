@@ -36,14 +36,20 @@ const Header = () => {
 						<option value="" defaultValue="---" className="language-option">
 							---
 						</option>
+						<option value="bulgarian" className="language-option">
+							Bulgarian
+						</option>
+						<option value="mongolian" className="language-option">
+							Mongolian
+						</option>
 						<option value="russian" className="language-option">
 							Russian
 						</option>
-						<option value="ukrainian" className="language-option">
-							Ukrainian
-						</option>
 						<option value="serbian" className="language-option">
 							Serbian
+						</option>
+						<option value="ukrainian" className="language-option">
+							Ukrainian
 						</option>
 					</select>
 				</div>
