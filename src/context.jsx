@@ -5,10 +5,15 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
 	const [fontType, setFontType] = useState(true);
+  // const [darkMode, setDarkMode] = useState(false);
 
 	const toggleFont = () => {
 		setFontType(!fontType);
 	};
+
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  // }
 
 	return (
 		<AppContext.Provider value={{ fontType, toggleFont }}>

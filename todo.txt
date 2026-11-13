@@ -63,7 +63,7 @@ Stretch Goals:
   CONTENT:
   - Other widely-used cyrillic alphabets that are different enough to warrant their own section:
     - Serbian -- DONE
-    - Bulgarian
-    - Mongolian
+    - Bulgarian -- DONE
+    - Mongolian -- DONE
   - Bonus section for obsolete / historical letters (Russian especially) - Questionable, revisit or ask
   - Include stretch goals and updates in the 'About' page
