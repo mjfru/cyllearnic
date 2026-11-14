@@ -41,6 +41,11 @@ Stretch Goals:
   - Shuffle button for flashcard page -- DONE
   - Live score tracker for quizzes -- DONE
   - Dark mode (place in header, after dropdown, and grouped with the cursive toggle)
+  					{isDarkMode ? (
+						<i className="fa-solid fa-sun fa-fw sun-icon"></i>
+					) : (
+						<i className="fa-solid fa-moon fa-fw moon-icon"></i>
+					)}
   - Indicate which activity is active by switching Bootstrap buttons (solid / outlined)
   - Add an special border or feature if there is something unique about the letter in relation to the language. (E.G. this letter only exists in Serbian)
   - Apply cursive styles to examples when toggled -- DONE

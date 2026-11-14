@@ -54,6 +54,7 @@ const Header = () => {
 					</select>
 				</div>
 			</nav>
+			{/* <i className="fa-solid fa-sun fa-fw sun-icon"></i> */}
 		</header>
 	);
 };
