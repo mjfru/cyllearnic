@@ -55,6 +55,7 @@ const Header = () => {
 				</div>
 			</nav>
 			{/* <i className="fa-solid fa-sun fa-fw sun-icon"></i> */}
+      {/* <i className="fa-solid fa-moon fa-fw moon-icon"></i> */}
 		</header>
 	);
 };
