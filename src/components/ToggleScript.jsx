@@ -18,7 +18,7 @@ const ToggleScript = () => {
 				onChange={toggleFont}
 			/>
 			<label className="form-check-label" htmlFor="switchCheckDefault">
-				Toggle Print / Cursive
+				Print / Cursive
 			</label>
 		</div>
 	);
