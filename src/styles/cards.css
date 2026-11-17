@@ -100,3 +100,15 @@
 	color: var(--highlight-dark);
 	font-size: 3rem;
 }
+
+/* Smaller Screens / Monitors ~1725px */
+@media only screen and (min-width: 1025px) and (max-width: 1725px) {}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {}
+
+/* Larger phones / smaller tablets */
+@media only screen and (max-width: 970px) {}
+
+/* Phones */
+@media only screen and (max-width: 660px) {}
