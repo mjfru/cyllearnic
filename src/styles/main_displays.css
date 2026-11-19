@@ -132,9 +132,6 @@ input[type="checkbox"] {
   letter-spacing: 1.15px;
 }
 
-/* Smaller Screens / Monitors ~1725px */
-@media only screen and (min-width: 1025px) and (max-width: 1725px) {}
-
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {}
 
