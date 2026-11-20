@@ -21,3 +21,13 @@ body {
 	font-family: var(--latin-font);
 	color: var(--primary-text);
 }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* .reg-card {
+    background-color: red;
+  } */
+
+  .logo {
+    letter-spacing: 5px;
+  }
+}
