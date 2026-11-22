@@ -4,7 +4,7 @@ h2 {
 }
 
 .page-heading {
-	/* text-transform: capitalize; */
+	text-transform: capitalize;
 	margin-top: 1rem;
 	letter-spacing: 2px;
 }
