@@ -62,16 +62,28 @@ body {
 
 	.reg-card,
 	.flash-card {
-		border-radius: var(--border-radius);
 		min-width: 20vw;
-		text-align: center;
 		/* background-color: red; */
 	}
+
 	.pronunciation {
 		font-size: 1.5rem;
 	}
 
 	.example-text {
-		font-size: .75rem;
+		font-size: 0.75rem;
 	}
 }
+
+/* @media only screen and (max-width: 970px) {
+	.study-container,
+	.flashcard-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.reg-card,
+	.flash-card {
+		min-width: 30vw;
+		background-color: blue;
+	}
+} */
