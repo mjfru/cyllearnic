@@ -75,7 +75,7 @@ body {
 	}
 }
 
-/* @media only screen and (max-width: 970px) {
+@media only screen and (max-width: 970px) {
 	.study-container,
 	.flashcard-container {
 		grid-template-columns: repeat(3, 1fr);
@@ -86,4 +86,4 @@ body {
 		min-width: 30vw;
 		background-color: blue;
 	}
-} */
+}
