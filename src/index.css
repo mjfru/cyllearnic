@@ -22,11 +22,7 @@ body {
 	color: var(--primary-text);
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-	/* .reg-card {
-    background-color: red;
-  } */
-
+@media only screen and (min-width: 481px) and (max-width: 1400px) {
 	.logo {
 		font-size: 2rem;
 		letter-spacing: 5px;
@@ -63,7 +59,7 @@ body {
 	.reg-card,
 	.flash-card {
 		min-width: 20vw;
-		/* background-color: red; */
+		background-color: red;
 	}
 
 	.pronunciation {
