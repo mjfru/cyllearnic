@@ -26,6 +26,7 @@ h2 {
 .activity-link {
 	margin: 0 2rem;
 	width: 6rem;
+  text-align: center;
 }
 
 .toggle-container {
